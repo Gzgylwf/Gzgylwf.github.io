@@ -10117,3 +10117,11 @@ section.resume-section .resume-section-content {
 /*
   My addition styles
 */
+.nav-item-my-tool-bar{
+  border-top: solid 0.5pt rgba(255, 255, 255, 0.30);
+  margin-top: 20pt;
+}
+
+.my-info-button:hover{
+  cursor: pointer;
+}

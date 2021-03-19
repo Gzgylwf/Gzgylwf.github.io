@@ -40,3 +40,15 @@
         target: "#sideNav",
     });
 })(jQuery); // End of use strict
+
+/**
+ * My function
+ */
+function myCollapse(domID){
+    dom = $('#'+domID);
+    if(dom.is(":visible")){
+        dom.hide();
+    }else{
+        dom.show();
+    }
+}
