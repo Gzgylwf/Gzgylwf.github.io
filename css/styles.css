@@ -10125,3 +10125,16 @@ section.resume-section .resume-section-content {
 .my-info-button:hover{
   cursor: pointer;
 }
+
+.inline-icon{
+  margin-left: 10pt;
+}
+
+.shrink-list-item{
+  padding-bottom: 2pt;
+  padding-top: 2pt;
+}
+
+.default-hide{
+  display: none;
+}

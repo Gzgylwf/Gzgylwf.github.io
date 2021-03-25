@@ -1,0 +1,40 @@
+about:
+  firstName: Wenfeng
+  lastName: LI
+  email: gemini_china@hotmail.com
+  hpSg: (65) 8342 2901
+  hpCn: (86) 139 8540 7427
+  loc: Singapore
+
+experience:
+  - name: Institute of Inform, I2R
+    loc: Singapore
+    positions:
+      - title: Senior Research Engineering II
+        period: aug 2020 - Present
+        desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
+        achivements:
+          - a
+          - b
+      - title: Senior Research Engineering I
+        period: aug 2020 - Present
+        desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
+        achivements:
+          - a
+          - b
+      - title: Research Engineering
+        period: aug 2020 - Present
+        desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
+        achivements:
+          - a
+          - b
+  
+  - name: ASTAR
+    loc: Singapore
+    positions:
+      - title: Senior Research Engineering
+        period: aug 2020 - Present
+        desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
+        achivements:
+          - a
+          - b

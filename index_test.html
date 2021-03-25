@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>{{ title }}</title>
+        <title>Personal Page - LI Wenfeng</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Google fonts-->
         <link href="css/google-font-saira.css" rel="stylesheet" type="text/css" />
@@ -40,20 +40,20 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        <span class="text-primary">{{ sessAbout.lastName }}</span>
-                        {{ sessAbout.firstName }}
+                        <span class="text-primary">LI</span>
+                        Wenfeng
                     </h1>
                     <div class="subheading mb-5">
                         <i class="fa fa-envelope"></i>  Email:
-                        <a href="mailto:{{ sessAbout.email }}" aria-hidden="true">{{ sessAbout.email }}</a>
+                        <a href="mailto:gemini_china@hotmail.com" aria-hidden="true">gemini_china@hotmail.com</a>
 
                         <i class="fa fa-mobile inline-icon" aria-hidden="true"></i>  HP:
-                        <span>{{ sessAbout.hpSg }}</span>
+                        <span>(65) 8342 2901</span>
                         <span>  ·  </span>
-                        <span>{{ sessAbout.hpCn }}</span>
+                        <span>(86) 139 8540 7427</span>
 
                         <i class="fa fa-map-marker inline-icon" aria-hidden="true"></i>  Located:
-                        <span>{{ sessAbout.loc }}</span>
+                        <span>Singapore</span>
                     </div>
 
                     <div class="social-icons">
@@ -68,34 +68,98 @@
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
-                    {% for comp in sessExp %}
+                    
                         <div class="container-fluid">
-                            <h3 class="mb-0">{{comp.name}}, {{comp.loc}}</h3>
-                            {% set cloop = loop %}
-                            {% for job in comp.positions %}
+                            <h3 class="mb-0">Institute of Inform, I2R, Singapore</h3>
+                            
+                            
                                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                                     <div class="container">
-                                        <div class="subheading mb-3">{{job.title}}</div>
+                                        <div class="subheading mb-3">Senior Research Engineering II</div>
                                         <p>
-                                            {{job.desc}}
-                                            <span class="my-info-button" onclick="myCollapse('c{{cloop.index}}p{{loop.index}}')" ><i class="fas fa-info-circle"></i></span>
+                                            hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
+                                            <span class="my-info-button" onclick="myCollapse('c1p1')" ><i class="fas fa-info-circle"></i></span>
                                         </p>
-                                        <ul class="list-group list-group-flush default-hide" id="c{{cloop.index}}p{{loop.index}}">
+                                        <ul class="list-group list-group-flush default-hide" id="c1p1">
                                             <h5>Achivements:</h5>
-                                            {% for achive in job.achivements %}
-                                                <li class="list-group-item shrink-list-item">{{achive}}</li>
-                                            {% endfor %}
+                                            
+                                                <li class="list-group-item shrink-list-item">a</li>
+                                            
+                                                <li class="list-group-item shrink-list-item">b</li>
+                                            
                                         </ul>
                                     </div>
-                                    <div class="flex-shrink-0"><span class="text-primary">{{job.period}}</span></div>
+                                    <div class="flex-shrink-0"><span class="text-primary">aug 2020 - Present</span></div>
                                 </div>
-                            {% endfor %}
+                            
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                    <div class="container">
+                                        <div class="subheading mb-3">Senior Research Engineering I</div>
+                                        <p>
+                                            hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
+                                            <span class="my-info-button" onclick="myCollapse('c1p2')" ><i class="fas fa-info-circle"></i></span>
+                                        </p>
+                                        <ul class="list-group list-group-flush default-hide" id="c1p2">
+                                            <h5>Achivements:</h5>
+                                            
+                                                <li class="list-group-item shrink-list-item">a</li>
+                                            
+                                                <li class="list-group-item shrink-list-item">b</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="flex-shrink-0"><span class="text-primary">aug 2020 - Present</span></div>
+                                </div>
+                            
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                    <div class="container">
+                                        <div class="subheading mb-3">Research Engineering</div>
+                                        <p>
+                                            hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
+                                            <span class="my-info-button" onclick="myCollapse('c1p3')" ><i class="fas fa-info-circle"></i></span>
+                                        </p>
+                                        <ul class="list-group list-group-flush default-hide" id="c1p3">
+                                            <h5>Achivements:</h5>
+                                            
+                                                <li class="list-group-item shrink-list-item">a</li>
+                                            
+                                                <li class="list-group-item shrink-list-item">b</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="flex-shrink-0"><span class="text-primary">aug 2020 - Present</span></div>
+                                </div>
+                            
                         </div>
-                    {% endfor %}
+                    
+                        <div class="container-fluid">
+                            <h3 class="mb-0">ASTAR, Singapore</h3>
+                            
+                            
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                                    <div class="container">
+                                        <div class="subheading mb-3">Senior Research Engineering</div>
+                                        <p>
+                                            hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
+                                            <span class="my-info-button" onclick="myCollapse('c2p1')" ><i class="fas fa-info-circle"></i></span>
+                                        </p>
+                                        <ul class="list-group list-group-flush default-hide" id="c2p1">
+                                            <h5>Achivements:</h5>
+                                            
+                                                <li class="list-group-item shrink-list-item">a</li>
+                                            
+                                                <li class="list-group-item shrink-list-item">b</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="flex-shrink-0"><span class="text-primary">aug 2020 - Present</span></div>
+                                </div>
+                            
+                        </div>
+                    
                 </div>
             </section>
             <hr class="m-0" />
-            
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
