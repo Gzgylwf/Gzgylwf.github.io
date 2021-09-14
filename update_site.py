@@ -20,7 +20,8 @@ if __name__ == "__main__":
     output = template.render(
         title = "Personal Page - LI Wenfeng",
         sessAbout = resume['about'],
-        sessExp = resume['experience']
+        sessExp = resume['experience'],
+        sessEdu = resume['education']
     )
 
     # Save to file

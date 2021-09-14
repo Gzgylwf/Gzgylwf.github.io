@@ -44,11 +44,13 @@
 /**
  * My function
  */
-function myCollapse(domID){
+function myCollapse(thisBtn, domID){
     dom = $('#'+domID);
     if(dom.is(":visible")){
         dom.hide();
+        $(thisBtn).removeClass('text-muted').addClass('text-warning');
     }else{
         dom.show();
+        $(thisBtn).removeClass('text-warning').addClass('text-muted');
     }
 }

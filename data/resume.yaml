@@ -11,19 +11,19 @@ experience:
     loc: Singapore
     positions:
       - title: Senior Research Engineering II
-        period: aug 2020 - Present
+        period: Aug 2020 - Present
         desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
         achivements:
           - a
           - b
       - title: Senior Research Engineering I
-        period: aug 2020 - Present
+        period: Aug 2020 - Present
         desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
         achivements:
           - a
           - b
       - title: Research Engineering
-        period: aug 2020 - Present
+        period: Aug 2020 - Present
         desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
         achivements:
           - a
@@ -38,3 +38,29 @@ experience:
         achivements:
           - a
           - b
+
+education:
+  - name: Institute of System Science, National University of Singapore
+    loc: Singapore
+    logo: nus.png
+    positions:
+      - title: Master of Technology in Knowledge of Engineering
+        period: Jan 2014 - Aug 2015
+        achivements:
+          - GPA 4.19/5.0, Top 10%
+          - The Best FYP project prize
+
+      - title: Graduate Diploma of System Analysis
+        period: Aug 2012 - Aug 2013
+        achivements:
+          - GPA 4.5/5.0, Top 3 graduates
+
+  - name: Computer Science and Technology, Harbin Institute of Technology
+    loc: China
+    logo: hit.png
+    positions:
+      - title: Graduate Diploma of System Analysis
+        period: Sep 2008 - Jul 2012
+        achivements:
+          - GPA 82.4/100.0, Top 10%
+          - 3-years 3rd Scholarship
