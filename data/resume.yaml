@@ -64,3 +64,22 @@ education:
         achivements:
           - GPA 82.4/100.0, Top 10%
           - 3-years 3rd Scholarship
+
+skills:
+  - category: Programming
+    perks:
+      - Python
+      - Java
+
+  - category: Tools
+    perks:
+      - VS
+      - Machine Learning
+
+awards:
+  - Awards 1
+  - Awards 2
+  - Awards 3
+  - Awards 4
+  - Awards 5
+  
