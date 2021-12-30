@@ -1,12 +1,12 @@
 about:
-  firstName: Wenfeng
-  lastName: LI
+  firstName: 汶峰
+  lastName: 李
   email: gemini_china@hotmail.com
   hpSg: +65 8342 2901
   hpCn: +86 139 8540 7427
   loc: Singapore
   github: Gzgylwf
-  version: en
+  version: cn
 
 experience:
   - name: Institute of Inform, I2R, AStar

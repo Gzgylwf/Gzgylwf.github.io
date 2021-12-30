@@ -24,13 +24,23 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                    <!-- li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li -->
-                    <li class="nav-item nav-item-my-tool-bar"><a class="nav-link" href="index_cn.html"><i class="fas fa-language fa-2x"></i></a></li>
+                    {% if sessAbout.version == 'en' %}
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                        <!-- li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li -->
+                        <li class="nav-item nav-item-my-tool-bar"><a class="nav-link" href="index_cn.html"><i class="fas fa-language fa-2x"></i></a></li>
+                    {% elif sessAbout.version == 'cn' %}
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">主页</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">主要经历</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">教育经历</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">主要技能</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">获奖及证书</a></li>
+                        <!-- li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">兴趣爱好</a></li -->
+                        <li class="nav-item nav-item-my-tool-bar"><a class="nav-link" href="index.html"><i class="fas fa-language fa-2x"></i></a></li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>
@@ -44,48 +54,16 @@
                         {{ sessAbout.firstName }}
                     </h1>
                     <div class="subheading mb-5">
-                        <i class="fa fa-envelope"></i>  Email:
+                        <i class="fa fa-envelope"></i> : 
                         <a href="mailto:{{ sessAbout.email }}" aria-hidden="true">{{ sessAbout.email }}</a>
 
-                        <i class="fa fa-mobile inline-icon" aria-hidden="true"></i>  HP:
+                        <i class="fa fa-mobile inline-icon" aria-hidden="true"></i> : 
                         <span>{{ sessAbout.hpSg }}</span>
                         <span>  ·  </span>
                         <span>{{ sessAbout.hpCn }}</span>
 
-                        <i class="fa fa-map-marker inline-icon" aria-hidden="true"></i>  Located:
+                        <i class="fa fa-map-marker inline-icon" aria-hidden="true"></i> : 
                         <span>{{ sessAbout.loc }}</span>
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
                     </div>
 
                     <div class="social-icons">
