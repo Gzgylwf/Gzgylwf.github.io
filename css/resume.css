@@ -3,6 +3,7 @@
     --light-color: aliceblue;
     --light-text: aliceblue;
     --dark-text: black;
+    --gery-text: #9e9e9e;
 
     --font-x-big-size: 28pt;
     --font-big-size: 18pt;
@@ -106,6 +107,11 @@ body{
     width: 100%;
     font-size: var(--font-middle-size);
     font-weight: bolder;
+}
+
+.session .sub-sub{
+    font-size: var(--font-small-size);
+    font-weight: bold;
 }
 
 .sub-font{

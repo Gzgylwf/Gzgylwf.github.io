@@ -8,6 +8,11 @@ about:
   github: Gzgylwf
   version: cn
 
+summary:
+  - 亮点1
+  - 亮点2
+  - 亮点3
+
 experience:
   - name: Institute of Inform, I2R, AStar
     loc: Singapore

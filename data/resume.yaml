@@ -8,25 +8,30 @@ about:
   github: Gzgylwf
   version: en
 
+summary:
+  - keypoint 1
+  - keypoint 2
+  - keypoint 3
+
 experience:
   - name: Institute of Inform, I2R, AStar
     loc: Singapore
     positions:
       - title: Senior Research Engineering II
-        period: Aug 2020 - Present
-        desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
+        period: Apr 2019 - Present
+        desc: 
         achivements:
           - a
           - b
       - title: Senior Research Engineering I
-        period: Aug 2020 - Present
+        period: Apr 2018 - Mar 2019
         desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
         hidden: 1
         achivements:
           - a
           - b
       - title: Research Engineering
-        period: Aug 2015 - Present
+        period: Aug 2015 - Mar 2018
         desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
         achivements:
           - a
@@ -79,11 +84,25 @@ skills:
     perks:
       - Python
       - Java
+      - Javascript
+      - C#
+      - R
 
-  - category: Tools
+  - category: ML
     perks:
-      - VS
-      - Machine Learning
+      - Tensorflow
+      - Pytorch
+      - Scikit-learn
+
+  - category: Database
+    perks:
+      - MangoDB
+      - MySQL
+
+  - category: Visualization
+    perks:
+      - Tableau
+      - PivotChart
 
 awards:
   - Awards 1

@@ -22,7 +22,8 @@ def render(object, template, outputFn):
         sessExp = object['experience'],
         sessEdu = object['education'],
         sessSkill = object['skills'],
-        sessAwards = object['awards']
+        sessAwards = object['awards'],
+        sessSummary = object['summary']
     )
     # Save to file
     with io.open(outputFn, "w") as f:

@@ -45,7 +45,12 @@
                     </div -->
 
                     <div class="session">
-                        <div class="title"><i class="fas fa-user-tag inline-icon"></i>Skills</div>
+                        {% if sessAbout.version == 'en' %}
+                            <div class="title"><i class="fas fa-user inline-icon"></i>Skills</div>
+                        {% elif sessAbout.version == 'cn' %}
+                            <div class="title"><i class="fas fa-user inline-icon"></i>主要技能</div>
+                        {% endif %}
+
                         {% for skill in sessSkill %}
                         <div class="sub mb-1 mb-1">{{skill.category}}</div>
                             {% for perk in skill.perks %}
@@ -59,7 +64,24 @@
                 <div class="col-10" id="detail-panel">
 
                     <div class="session">
-                        <div class="title dark-text"><i class="fas fa-user-tie inline-icon"></i>Experience</div>
+                        {% if sessAbout.version == 'en' %}
+                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>Summary</div>
+                        {% elif sessAbout.version == 'cn' %}
+                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>综述</div>
+                        {% endif %}
+
+                        {% for keypoint in sessSummary %}
+                            <div class="ps-3 mt-1"><i class="fas fa-angle-right inline-icon"></i>{{keypoint}}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="session">
+                        {% if sessAbout.version == 'en' %}
+                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>Experience</div>
+                        {% elif sessAbout.version == 'cn' %}
+                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>工作经历</div>
+                        {% endif %}
+
                         {% for comp in sessExp %}
                         {% if 'hidden' not in comp %}
                         <div class="sub mb-1">{{comp.name}}, <i>{{comp.loc}}</i></div>
@@ -72,8 +94,17 @@
                                         <div class="col text-end theme-text"><i>{{job.period}}</i></div>
                                     </div>
                                 </div>
-                                <div class="card-body pt-0 pb-1">
+                                <div class="card-body pt-0 pb-1 ms-2">
+                                    {% if job.desc %}
                                     <div>{{job.desc}}</div>
+                                    {% endif %}
+
+                                    {% if sessAbout.version == 'en' %}
+                                        <div class="sub-sub"><i>Projects & Achivements:</i></div>
+                                    {% elif sessAbout.version == 'cn' %}
+                                        <div class="sub-sub"><i>项目 & 成就:</i></div>
+                                    {% endif %}
+
                                     {% for achive in job.achivements %}
                                         <p><i class="fas fa-angle-right inline-icon"></i>{{achive}}</p>
                                     {% endfor %}
@@ -86,7 +117,12 @@
                     </div>
 
                     <div class="session">
-                        <div class="title dark-text"><i class="fas fa-user-graduate inline-icon"></i>Education</div>
+                        {% if sessAbout.version == 'en' %}
+                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>Education</div>
+                        {% elif sessAbout.version == 'cn' %}
+                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>教育经历</div>
+                        {% endif %}
+
                         {% for comp in sessEdu %}
                         {% if 'hidden' not in comp %}
                         <div class="sub mb-1">{{comp.name}}, <i>{{comp.loc}}</i></div>
@@ -99,7 +135,7 @@
                                         <div class="col text-end theme-text"><i>{{job.period}}</i></div>
                                     </div>
                                 </div>
-                                <div class="card-body pt-0 pb-1">
+                                <div class="card-body pt-0 pb-1 ms-2">
                                     <div>{{job.desc}}</div>
                                     {% for achive in job.achivements %}
                                         <p><i class="fas fa-angle-right inline-icon"></i>{{achive}}</p>
@@ -113,7 +149,12 @@
                     </div>
 
                     <div class="session">
-                        <div class="title dark-text"><i class="fas fa-user-check inline-icon"></i>Awards & Certifications</div>
+                        {% if sessAbout.version == 'en' %}
+                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>Awards & Certifications</div>
+                        {% elif sessAbout.version == 'cn' %}
+                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>成就 & 证书</div>
+                        {% endif %}
+
                         {% for award in sessAwards %}
                             <div class="ps-3 mt-1"><i class="fas fa-medal inline-icon"></i>{{award}}</div>
                         {% endfor %}
@@ -128,8 +169,8 @@
         <!-- script src="js/jquery.min.js"></script -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!-- Third party plugin JS-->
-        <script src="js/jquery.easing.min.js"></script>
+        <!-- script src="js/jquery.easing.min.js"></script -->
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <!-- script src="js/scripts.js"></script -->
     </body>
 </html>
