@@ -14,7 +14,7 @@ summary:
   - keypoint 3
 
 experience:
-  - name: Institute of Inform, I2R, AStar
+  - name: NLP Group, ALI, I2R, AStar
     loc: Singapore
     positions:
       - title: Senior Research Engineering II
@@ -25,28 +25,53 @@ experience:
           - b
       - title: Senior Research Engineering I
         period: Apr 2018 - Mar 2019
-        desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
-        hidden: 1
+        desc: 
         achivements:
           - a
           - b
       - title: Research Engineering
         period: Aug 2015 - Mar 2018
-        desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
+        desc: 
         achivements:
           - a
           - b
   
-  - name: Zalora
+  - name: BA Department, Zalora
     loc: Singapore
     hidden: 1
     positions:
-      - title: Senior Research Engineering
-        period: Aug 2020 - Present
-        desc: hhhhhhhhhhhhhdfhdhfhsdhfsdfhsdhf
+      - title: Data Analyst (Internship)
+        period: Apr 2015 - Jun 2015
+        desc: 
         achivements:
           - a
           - b
+
+  - name: SDE, National University of Singapore
+    loc: Singapore
+    hidden: 1
+    positions:
+      - title: Intern
+        period: Aug 2014 - Apr 2015
+        desc: 
+        achivements:
+          - name: Prototype of the MAS of evacuation strategy with BIM-IFC Model
+            bullets:
+              - Develop an IFC parser to convert the BIM model into 3D scene
+              - 
+              - Get the best FYP project prize
+
+  - name: IT Department, Keppel Land
+    loc: Singapore
+    hidden: 1
+    positions:
+      - title: Intern
+        period: Feb 2013 - Jul 2013
+        desc: 
+        achivements:
+          - name: GO-Mobile Internal Applications
+            bullets:
+              - Success to launch 3 applications on IOS and Android platforms
 
 education:
   - name: Institute of System Science, National University of Singapore
@@ -62,13 +87,13 @@ education:
       - title: Graduate Diploma of System Analysis
         period: Aug 2012 - Aug 2013
         achivements:
-          - GPA 4.5/5.0, Top 3 graduates
+          - GPA 4.5/5.0, Top 3
 
   - name: Computer Science and Technology, Harbin Institute of Technology
     loc: China
     logo: hit.png
     positions:
-      - title: Graduate Diploma of System Analysis
+      - title: Bachelor of Computer Science and Technology
         period: Sep 2008 - Jul 2012
         achivements:
           - GPA 82.4/100.0, Top 10%
@@ -84,9 +109,7 @@ skills:
     perks:
       - Python
       - Java
-      - Javascript
       - C#
-      - R
 
   - category: ML
     perks:
@@ -99,10 +122,18 @@ skills:
       - MangoDB
       - MySQL
 
+  - category: Web Dev
+    perks:
+      - Jinja2
+      - Flush
+      - HTML/CSS
+      - Javascript
+
   - category: Visualization
     perks:
-      - Tableau
       - PivotChart
+      - D3.js
+      - Tableau
 
 awards:
   - Awards 1
@@ -111,3 +142,12 @@ awards:
   - Awards 4
   - Awards 5
   
+
+interests:
+  - category: Game
+    perks:
+      - WoW
+      - Overwatch
+      - Pokemon GO
+      - Pokemon Master
+      - POkemon Unite

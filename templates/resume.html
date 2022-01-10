@@ -46,9 +46,9 @@
 
                     <div class="session">
                         {% if sessAbout.version == 'en' %}
-                            <div class="title"><i class="fas fa-user inline-icon"></i>Skills</div>
+                            <div class="title"><i class="fas fa-user-check inline-icon"></i>Skills</div>
                         {% elif sessAbout.version == 'cn' %}
-                            <div class="title"><i class="fas fa-user inline-icon"></i>主要技能</div>
+                            <div class="title"><i class="fas fa-user-check inline-icon"></i>主要技能</div>
                         {% endif %}
 
                         {% for skill in sessSkill %}
@@ -77,9 +77,9 @@
 
                     <div class="session">
                         {% if sessAbout.version == 'en' %}
-                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>Experience</div>
+                            <div class="title dark-text"><i class="fas fa-user-tie inline-icon"></i>Recent Experience</div>
                         {% elif sessAbout.version == 'cn' %}
-                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>工作经历</div>
+                            <div class="title dark-text"><i class="fas fa-user-tie inline-icon"></i>近期工作经历</div>
                         {% endif %}
 
                         {% for comp in sessExp %}
@@ -108,6 +108,19 @@
                                     {% for achive in job.achivements %}
                                         <p><i class="fas fa-angle-right inline-icon"></i>{{achive}}</p>
                                     {% endfor %}
+
+                                    {% for achive in job.achivements %}
+                                        {% if 'bullets' in achive %}
+                                            <p><i class="fas fa-angle-right inline-icon"></i>{{achive.name}}</p>
+                                            <ul>
+                                                {% for bullet in achive.bullets %}
+                                                    <li>{{bullet}}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% else %}
+                                            <p><i class="fas fa-angle-right inline-icon"></i>{{achive.name}}</p>
+                                        {% endif %}
+                                    {% endfor %}
                                 </div>
                             </div>
                             {% endif %}
@@ -118,9 +131,9 @@
 
                     <div class="session">
                         {% if sessAbout.version == 'en' %}
-                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>Education</div>
+                            <div class="title dark-text"><i class="fas fa-user-graduate inline-icon"></i>Education</div>
                         {% elif sessAbout.version == 'cn' %}
-                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>教育经历</div>
+                            <div class="title dark-text"><i class="fas fa-user-graduate inline-icon"></i>教育经历</div>
                         {% endif %}
 
                         {% for comp in sessEdu %}
@@ -150,9 +163,9 @@
 
                     <div class="session">
                         {% if sessAbout.version == 'en' %}
-                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>Awards & Certifications</div>
+                            <div class="title dark-text"><i class="fas fa-user-plus inline-icon"></i>Awards & Certifications</div>
                         {% elif sessAbout.version == 'cn' %}
-                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>成就 & 证书</div>
+                            <div class="title dark-text"><i class="fas fa-user-plus inline-icon"></i>成就 & 证书</div>
                         {% endif %}
 
                         {% for award in sessAwards %}

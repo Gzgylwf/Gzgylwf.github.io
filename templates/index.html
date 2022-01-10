@@ -30,6 +30,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                         <!-- li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li -->
                         <li class="nav-item nav-item-my-tool-bar"><a class="nav-link" href="index_cn.html"><i class="fas fa-language fa-2x"></i></a></li>
@@ -38,6 +39,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">主要经历</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">教育经历</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">主要技能</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">兴趣爱好</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">获奖及证书</a></li>
                         <!-- li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">兴趣爱好</a></li -->
                         <li class="nav-item nav-item-my-tool-bar"><a class="nav-link" href="index.html"><i class="fas fa-language fa-2x"></i></a></li>
@@ -80,7 +82,12 @@
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+                    {% if sessAbout.version == 'en' %}
+                        <h2 class="mb-5">Experience</h2>
+                    {% elif sessAbout.version == 'cn' %}
+                        <h2 class="mb-5">工作经历</h2>
+                    {% endif %}
+
                     {% for comp in sessExp %}
                         <div class="container-fluid">
                             <h3 class="mb-0">{{comp.name}}, {{comp.loc}}</h3>
@@ -105,7 +112,18 @@
                                             {% endif %}
                                             <ul>
                                                 {% for achive in job.achivements %}
-                                                    <li>{{achive}}</li>
+                                                    <li>
+                                                        {% if 'bullets' in achive %}
+                                                            <b><i>{{achive.name}}</i></b>
+                                                            <ul>
+                                                                {% for bullet in achive.bullets %}
+                                                                    <li>{{bullet}}</li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                        {% else %}
+                                                            {{achive.name}}
+                                                        {% endif %}
+                                                    </li>
                                                 {% endfor %}
                                             </ul>
                                         </div>
@@ -122,7 +140,12 @@
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
+                    {% if sessAbout.version == 'en' %}
+                        <h2 class="mb-5">Education</h2>
+                    {% elif sessAbout.version == 'cn' %}
+                        <h2 class="mb-5">教育经历</h2>
+                    {% endif %}
+
                     {% for comp in sessEdu %}
                         <div class="container-fluid">
                             <h3 class="mb-0"><img class="img-fluid mx-1" width="60pt" src="assets/img/{{comp.logo}}"/>{{comp.name}}, {{comp.loc}}</h3>
@@ -149,7 +172,11 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
+                    {% if sessAbout.version == 'en' %}
+                        <h2 class="mb-5">Skills</h2>
+                    {% elif sessAbout.version == 'cn' %}
+                        <h2 class="mb-5">主要技能</h2>
+                    {% endif %}
 
                     <div class="row row-cols-1 row-cols-md-5 g-4">
                         {% for skill in sessSkill %}
@@ -178,10 +205,50 @@
             </section>
             <hr class="m-0" />
 
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    {% if sessAbout.version == 'en' %}
+                        <h2 class="mb-5">Interests</h2>
+                    {% elif sessAbout.version == 'cn' %}
+                        <h2 class="mb-5">兴趣爱好</h2>
+                    {% endif %}
+
+                    <div class="row row-cols-1 row-cols-md-5 g-4">
+                        {% for interest in sessInterests %}
+                        <div class="col">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                <h5 class="card-title">{{interest.category}}</h5>
+                                <p class="card-text">
+                                    <ul class="fa-ul mb-0">
+                                        {% for perk in interest.perks %}
+                                        <li>
+                                            <span class="fa-li"><i class="fas fa-star"></i></span>
+                                            {{perk}}
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </section>
+            <hr class="m-0" />
+
             <!-- Awards-->
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
+                    {% if sessAbout.version == 'en' %}
+                        <h2 class="mb-5">Awards & Certifications</h2>
+                    {% elif sessAbout.version == 'cn' %}
+                        <h2 class="mb-5">获奖 & 证书</h2>
+                    {% endif %}
+
                     <ul class="fa-ul mb-0">
                         {% for award in sessAwards %}
                         <li>
@@ -194,14 +261,6 @@
             </section>
             <hr class="m-0" />
 
-            <!-- Interests-->
-            <!-- section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-                </div>
-            </section -->
         </div>
 
         <!-- Bootstrap core JS-->
