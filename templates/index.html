@@ -33,7 +33,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                         <!-- li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li -->
-                        <li class="nav-item nav-item-my-tool-bar"><a class="nav-link" href="index_cn.html"><i class="fas fa-language fa-2x"></i></a></li>
+                        <li class="nav-item nav-item-my-tool-bar" hidden><a class="nav-link" href="index_cn.html"><i class="fas fa-language fa-2x"></i></a></li>
                     {% elif sessAbout.version == 'cn' %}
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">主页</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">主要经历</a></li>
@@ -42,7 +42,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">兴趣爱好</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">获奖及证书</a></li>
                         <!-- li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">兴趣爱好</a></li -->
-                        <li class="nav-item nav-item-my-tool-bar"><a class="nav-link" href="index.html"><i class="fas fa-language fa-2x"></i></a></li>
+                        <li class="nav-item nav-item-my-tool-bar" hidden><a class="nav-link" href="index.html"><i class="fas fa-language fa-2x"></i></a></li>
                     {% endif %}
                 </ul>
             </div>
@@ -67,11 +67,17 @@
                         <span>{{ sessAbout.hpCn }}</span>
                         -->
 
+                        <i class="fab fa-github inline-icon" aria-hidden="true"></i> : 
+                        <span>{{ sessAbout.github }}</span>
+
+                        <i class="fab fa-instagram inline-icon" aria-hidden="true"></i> : 
+                        <span>{{ sessAbout.ins }}</span>
+
                         <i class="fa fa-map-marker inline-icon" aria-hidden="true"></i> : 
                         <span>{{ sessAbout.loc }}</span>
                     </div>
 
-                    <div class="social-icons">
+                    <div class="social-icons" hidden>
                         <a class='btn btn-secondary' href="{{ sessAbout.lastName }}{{ sessAbout.firstName }}-resume.pdf" download>
                             Download CV<i class="fa fa-download inline-icon" aria-hidden="true"></i>
                         </a>
@@ -105,27 +111,29 @@
                                             {% endif %}
                                         </p>
                                         <div id="c{{cloop.index}}p{{loop.index}}" style="display: none;">
-                                            {% if sessAbout.version == 'en' %}
-                                                <h5>Projects & Achivements:</h5>
-                                            {% elif sessAbout.version == 'cn' %}
-                                                <h5>项目 & 成就:</h5>
+                                            {% if job.achivements != None and job.achivements|length > 0 %}
+                                                {% if sessAbout.version == 'en' %}
+                                                    <h5>Projects & Achivements:</h5>
+                                                {% elif sessAbout.version == 'cn' %}
+                                                    <h5>项目 & 成就:</h5>
+                                                {% endif %}
+                                                <ul>
+                                                    {% for achive in job.achivements %}
+                                                        <li>
+                                                            {% if 'bullets' in achive %}
+                                                                <b><i>{{achive.name}}</i></b>
+                                                                <ul>
+                                                                    {% for bullet in achive.bullets %}
+                                                                        <li>{{bullet}}</li>
+                                                                    {% endfor %}
+                                                                </ul>
+                                                            {% else %}
+                                                                {{achive.name}}
+                                                            {% endif %}
+                                                        </li>
+                                                    {% endfor %}
+                                                </ul>
                                             {% endif %}
-                                            <ul>
-                                                {% for achive in job.achivements %}
-                                                    <li>
-                                                        {% if 'bullets' in achive %}
-                                                            <b><i>{{achive.name}}</i></b>
-                                                            <ul>
-                                                                {% for bullet in achive.bullets %}
-                                                                    <li>{{bullet}}</li>
-                                                                {% endfor %}
-                                                            </ul>
-                                                        {% else %}
-                                                            {{achive.name}}
-                                                        {% endif %}
-                                                    </li>
-                                                {% endfor %}
-                                            </ul>
                                         </div>
                                     </div>
                                     <div class="flex-shrink-0"><span class="text-primary">{{job.period}}</span></div>

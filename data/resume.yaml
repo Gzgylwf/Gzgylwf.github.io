@@ -6,6 +6,7 @@ about:
   hpCn: +86 139 8540 7427
   loc: Singapore
   github: Gzgylwf
+  ins: gemini_china
   version: en
 
 summary:
@@ -21,20 +22,28 @@ experience:
         period: Apr 2019 - Present
         desc: 
         achivements:
-          - a
-          - b
+          - name: Customer Satisfication Analysis of Helpdesk Dialgue, Baidu Cooperated Project [On-going]
+            bullets:
+              - Work as Co-PI to track and manage the project schedule, manpower and budget
       - title: Senior Research Engineering I
         period: Apr 2018 - Mar 2019
         desc: 
         achivements:
-          - a
-          - b
+          - name: Machine Reading Comprehension on Yes/No Question, Baidu Cooperated Project
+            bullets:
+              - Developed and refined the model, which achieved the top performance on Yes/No dataset
+          - name: Create an annotation tool to handle complex text data, which boost at least 2x speed and quality of annotation task
       - title: Research Engineering
         period: Aug 2015 - Mar 2018
         desc: 
         achivements:
-          - a
-          - b
+          - name: Target-level Sentiment Analysis of News Title, Baidu Cooperated Project
+            bullets:
+              - Module was interagted into Baidu NLP platform
+          - name: Sentiment Analysis of Movie Comments, Baidu Cooperated Project
+            bullets:
+              - Refine the model and got 7-8% F1-score improvement
+              - Module was deployed on Baidu's 3 product and work well over 8 domains
   
   - name: BA Department, Zalora
     loc: Singapore
@@ -44,8 +53,7 @@ experience:
         period: Apr 2015 - Jun 2015
         desc: 
         achivements:
-          - a
-          - b
+          - name: Create daily/monthly report for global markets
 
   - name: SDE, National University of Singapore
     loc: Singapore
@@ -57,9 +65,8 @@ experience:
         achivements:
           - name: Prototype of the MAS of evacuation strategy with BIM-IFC Model
             bullets:
-              - Develop an IFC parser to convert the BIM model into 3D scene
-              - 
-              - Get the best FYP project prize
+              - Developed an IFC parser to convert the BIM model into 3D scene
+              - Got the best FYP project prize
 
   - name: IT Department, Keppel Land
     loc: Singapore
@@ -71,7 +78,7 @@ experience:
         achivements:
           - name: GO-Mobile Internal Applications
             bullets:
-              - Success to launch 3 applications on IOS and Android platforms
+              - Launched 3 applications on IOS and Android platforms
 
 education:
   - name: Institute of System Science, National University of Singapore
@@ -97,7 +104,6 @@ education:
         period: Sep 2008 - Jul 2012
         achivements:
           - GPA 82.4/100.0, Top 10%
-          - 3-years 3rd Scholarship
 
 skills:
   - category: Language
@@ -136,18 +142,26 @@ skills:
       - Tableau
 
 awards:
-  - Awards 1
-  - Awards 2
-  - Awards 3
-  - Awards 4
-  - Awards 5
-  
+  - Deep Learning Specialization by DeepLearning.AI, Coursera. Cre.No:BDQ6PV84R4VU, May 2019
 
 interests:
   - category: Game
     perks:
       - WoW
       - Overwatch
-      - Pokemon GO
-      - Pokemon Master
-      - POkemon Unite
+      - Pokemon Game
+      - Skyrim 5
+      - Sims/Sims City
+      - Pal 1-7
+      - Minecraft
+
+  - category: Sport
+    perks:
+      - Swimming
+      - Skating
+
+  - category: hobby
+    perks:
+      - Singing
+      - Shopping
+      - Cooking

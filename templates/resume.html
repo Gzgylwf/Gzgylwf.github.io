@@ -46,9 +46,9 @@
 
                     <div class="session">
                         {% if sessAbout.version == 'en' %}
-                            <div class="title"><i class="fas fa-user-check inline-icon"></i>Skills</div>
+                            <div class="title">Skills</div>
                         {% elif sessAbout.version == 'cn' %}
-                            <div class="title"><i class="fas fa-user-check inline-icon"></i>主要技能</div>
+                            <div class="title">主要技能</div>
                         {% endif %}
 
                         {% for skill in sessSkill %}
@@ -65,9 +65,9 @@
 
                     <div class="session">
                         {% if sessAbout.version == 'en' %}
-                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>Summary</div>
+                            <div class="title dark-text">Summary</div>
                         {% elif sessAbout.version == 'cn' %}
-                            <div class="title dark-text"><i class="fas fa-user-tag inline-icon"></i>综述</div>
+                            <div class="title dark-text">综述</div>
                         {% endif %}
 
                         {% for keypoint in sessSummary %}
@@ -77,9 +77,9 @@
 
                     <div class="session">
                         {% if sessAbout.version == 'en' %}
-                            <div class="title dark-text"><i class="fas fa-user-tie inline-icon"></i>Recent Experience</div>
+                            <div class="title dark-text">Work Experience (Recent)</div>
                         {% elif sessAbout.version == 'cn' %}
-                            <div class="title dark-text"><i class="fas fa-user-tie inline-icon"></i>近期工作经历</div>
+                            <div class="title dark-text">近期工作经历</div>
                         {% endif %}
 
                         {% for comp in sessExp %}
@@ -99,28 +99,26 @@
                                     <div>{{job.desc}}</div>
                                     {% endif %}
 
-                                    {% if sessAbout.version == 'en' %}
-                                        <div class="sub-sub"><i>Projects & Achivements:</i></div>
-                                    {% elif sessAbout.version == 'cn' %}
-                                        <div class="sub-sub"><i>项目 & 成就:</i></div>
-                                    {% endif %}
-
-                                    {% for achive in job.achivements %}
-                                        <p><i class="fas fa-angle-right inline-icon"></i>{{achive}}</p>
-                                    {% endfor %}
-
-                                    {% for achive in job.achivements %}
-                                        {% if 'bullets' in achive %}
-                                            <p><i class="fas fa-angle-right inline-icon"></i>{{achive.name}}</p>
-                                            <ul>
-                                                {% for bullet in achive.bullets %}
-                                                    <li>{{bullet}}</li>
-                                                {% endfor %}
-                                            </ul>
-                                        {% else %}
-                                            <p><i class="fas fa-angle-right inline-icon"></i>{{achive.name}}</p>
+                                    {% if job.achivements != None and job.achivements|length > 0 %}
+                                        {% if sessAbout.version == 'en' %}
+                                            <div class="sub-sub"><i>Projects & Achivements:</i></div>
+                                        {% elif sessAbout.version == 'cn' %}
+                                            <div class="sub-sub"><i>参与项目及成果:</i></div>
                                         {% endif %}
-                                    {% endfor %}
+
+                                        {% for achive in job.achivements %}
+                                            {% if 'bullets' in achive %}
+                                                <p><i class="fas fa-angle-right inline-icon"></i>{{achive.name}}</p>
+                                                <ul class="mb-2">
+                                                    {% for bullet in achive.bullets %}
+                                                        <li class="bullet">{{bullet}}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% else %}
+                                                <p><i class="fas fa-angle-right inline-icon"></i>{{achive.name}}</p>
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endif %}
                                 </div>
                             </div>
                             {% endif %}
@@ -131,9 +129,9 @@
 
                     <div class="session">
                         {% if sessAbout.version == 'en' %}
-                            <div class="title dark-text"><i class="fas fa-user-graduate inline-icon"></i>Education</div>
+                            <div class="title dark-text">Education</div>
                         {% elif sessAbout.version == 'cn' %}
-                            <div class="title dark-text"><i class="fas fa-user-graduate inline-icon"></i>教育经历</div>
+                            <div class="title dark-text">教育经历</div>
                         {% endif %}
 
                         {% for comp in sessEdu %}
@@ -163,9 +161,9 @@
 
                     <div class="session">
                         {% if sessAbout.version == 'en' %}
-                            <div class="title dark-text"><i class="fas fa-user-plus inline-icon"></i>Awards & Certifications</div>
+                            <div class="title dark-text">Awards & Certifications</div>
                         {% elif sessAbout.version == 'cn' %}
-                            <div class="title dark-text"><i class="fas fa-user-plus inline-icon"></i>成就 & 证书</div>
+                            <div class="title dark-text">成就 & 证书</div>
                         {% endif %}
 
                         {% for award in sessAwards %}

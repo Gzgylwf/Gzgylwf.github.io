@@ -6,10 +6,12 @@
     --gery-text: #9e9e9e;
 
     --font-x-big-size: 28pt;
-    --font-big-size: 18pt;
+    --font-bigger-size: 18pt;
+    --font-big-size: 16pt;
     --font-middle-size: 14pt;
-    --font-normal-size: 10pt;
-    --font-small-size: 9pt;
+    --font-normal-size: 12pt;
+    --font-small-size: 10pt;
+    --font-smaller-size: 8pt;
 }
 
 body{
@@ -84,8 +86,8 @@ body{
 .session .title{
     width: 100%;
     padding-top: 2pt;
-    margin-bottom: 2pt;
-    font-size: var(--font-big-size);
+    margin-bottom: 4pt;
+    font-size: var(--font-bigger-size);
     font-weight: bolder;
 }
 
@@ -114,8 +116,14 @@ body{
     font-weight: bold;
 }
 
+.session .bullet{
+    font-size: var(--font-small-size);
+    font-style: italic;
+}
+
 .sub-font{
     font-size: var(--font-middle-size);
+    font-weight: bold;
 }
 
 #detail-panel{
