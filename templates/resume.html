@@ -88,7 +88,7 @@
                             {% for job in comp.positions %}
                             {% if 'hidden' not in job %}
                             <div class="card">
-                                <div class="card-header justify-content-between bg-white border-0 pt-0 pb-1">
+                                <div class="card-header justify-content-between bg-light-grey border-0 pt-0 pb-1">
                                     <div class="row sub-font mb-0">
                                         <div class="col sub-font"><i>{{job.title}}</i></div>
                                         <div class="col text-end theme-text"><i>{{job.period}}</i></div>
@@ -108,7 +108,7 @@
 
                                         {% for achive in job.achivements %}
                                             {% if 'bullets' in achive %}
-                                                <p><i class="fas fa-angle-right inline-icon"></i>{{achive.name}}</p>
+                                                <p><i class="fas fa-angle-right inline-icon"></i><I>{{achive.name}}</I></p>
                                                 <ul class="mb-2">
                                                     {% for bullet in achive.bullets %}
                                                         <li class="bullet">{{bullet}}</li>
@@ -140,7 +140,7 @@
                             {% for job in comp.positions %}
                             {% if 'hidden' not in job %}
                             <div class="card">
-                                <div class="card-header justify-content-between bg-white border-0 pt-0 pb-1">
+                                <div class="card-header justify-content-between bg-light-grey border-0 pt-0 pb-1">
                                     <div class="row sub-font mb-0">
                                         <div class="col sub-font"><i>{{job.title}}</i></div>
                                         <div class="col text-end theme-text"><i>{{job.period}}</i></div>
@@ -167,7 +167,7 @@
                         {% endif %}
 
                         {% for award in sessAwards %}
-                            <div class="ps-3 mt-1"><i class="fas fa-medal inline-icon"></i>{{award}}</div>
+                            <div class="ps-3 mt-1"><i class="fas fa-angle-right inline-icon"></i>{{award}}</div>
                         {% endfor %}
                     </div>
 
