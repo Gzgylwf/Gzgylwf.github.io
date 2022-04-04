@@ -1,0 +1,19 @@
+position: Natural Language Processing Researcher
+company: Tencent
+name: Li Wenfeng
+email: gemini_china@hotmail.com
+hp: +65 8342 2901
+
+# Above is the basic information
+
+Dear Tencent Recruiting Team,
+
+I am writing to express my interest in the attractive position of Natural Language Processing Researcher you posted on Linkedin. Through the job description, I think my experience will qualify the expectation.
+
+Currently, I am working as Senior Research Engineering in the NLP group at I2R, AStar. When I joined the lab, I was responsible for data collection and analysis work. Then I was involved in the sentiment analysis of the movie comments project, which got the excellent result on the customer's platform. After that, I successively participated in 2-3 English and Chinese sentiment related projects. Those projects were sentence-level and aspect-level on various domains, which have achieved some results. My project experience should match the job requirement.
+
+After 6-years of experience in NLP, I hope to work for a bigger platform and my research can affect more people in the real world. With Tencent's opportunities and platform, I believe that I can achieve the goal.
+
+I would like to have a chance to meet with you and discuss the opportunities. Please let me know if you have any questions.
+
+Thanks for your consideration.
