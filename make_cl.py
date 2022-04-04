@@ -5,39 +5,40 @@ import io
 import os
 import yaml
 import argparse
+import pathlib
 
 
-def render(object, template, outputFn):
+def renderCL(info, body, template):
     template = env.get_template(template)
     output = template.render(
-        title = "Personal Page - {} {}".format(object['about']['lastName'], object['about']['firstName']),
-        sessAbout = object['about'],
-        sessExp = object['experience'],
-        sessEdu = object['education'],
-        sessSkill = object['skills'],
-        sessAwards = object['awards'],
-        sessSummary = object['summary'],
-        sessInterests = object['interests']
+        title = "Cover Letter - {} to {}".format(info['name'], info['company']),
+        info = info,
+        body=body
     )
     # Save to file
-    with io.open(outputFn, "w") as f:
+    with io.open('{}_Coverletter.html'.format(info['company']), "w") as f:
         f.write(output)
         f.close()
 
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('string', metavar='N', type=int, nargs='+', help='an integer for the accumulator')
+    parser.add_argument('coverletter', type=str, help='Cover letter file')
+    args = parser.parse_args()
 
-    headers = readResume('data/resume.yaml')
-    resumeCN = None
-    if os.path.exists('data/resume_cn.yaml'): resumeCN = readResume('data/resume_cn.yaml')
+    assert os.path.exists(args.coverletter), "{} not existed!".format(args.resume)
+    # Read files
+    info, body = {}, []
+    for line in io.open(args.coverletter, 'r', encoding='utf8').readlines():
+        line = line.strip()
+        if line.startswith("#") or line == '': continue
+        elif ':' in line:
+            chunks = line.split(":")
+            info[chunks[0].strip()] = chunks[1].strip()
+        else:
+            body.append(line)
     
     env = Environment(loader=FileSystemLoader("templates"))
-    templatesFiles = ['index', 'resume']
-
-    for templateFile in templatesFiles:
-        render(resume, "{}.html".format(templateFile), "{}.html".format(templateFile))
-        if resumeCN is not None:
-            render(resumeCN, "{}.html".format(templateFile), "{}_cn.html".format(templateFile))
+    renderCL(info, body, "coverletter.html")
     print("Update finish!")
     

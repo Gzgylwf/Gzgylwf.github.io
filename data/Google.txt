@@ -1,0 +1,13 @@
+position: Senior Engineering
+company: Google
+name: Li Wenfeng
+email: liwenfeng20112012@gmail.com
+hp: +65 8342 2901
+# Above is the basic information
+
+Dear Google,
+
+Paragrah 1
+
+Paragraph 2
+
