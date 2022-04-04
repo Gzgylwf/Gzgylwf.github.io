@@ -1,7 +1,7 @@
 about:
   firstName: Wenfeng
   lastName: LI
-  email: gemini_china@hotmail.com
+  email: liwenfeng20112012@gmail.com
   hpSg: +65 8342 2901
   hpCn: +86 139 8540 7427
   loc: Singapore
@@ -10,9 +10,7 @@ about:
   version: en
 
 summary:
-  - Solid 7 years experience on programming, data analysis and machine learning on NLP
-  - 
-  - keypoint 3
+  - Solid 7 years of work experience in programming, data analysis and machine learning on NLP
 
 experience:
   - name: NLP Group, ALI, I2R, AStar
@@ -22,29 +20,32 @@ experience:
         period: Apr 2019 - Present
         desc: 
         achivements:
-          - name: Customer Satisfication Analysis of Helpdesk Dialgue, Baidu Cooperated Project [On-going]
+          - name: Customer Satisfaction Analysis of Helpdesk Dialogue, Baidu Cooperated Project [On-going]
             bullets:
-              - Work as Co-PI to track and manage the project schedule, manpower and budget
-          - name: Build an annotation platform to handle annotation of complex data, which boost the speed and improve the quality of annotation
+              - Responsible for building the data pipeline, managing the annotation process, feature engineering and model improvement
+              - Work as Co-PI to track and manage the project schedule, manpower and budget analysis for supporting decision making
+          - name: Build an annotation platform to handle annotation of conversation data, which boost the speed and monitor the quality of annotation
       - title: Senior Research Engineering I
         period: Apr 2018 - Mar 2019
         desc: 
         achivements:
           - name: Machine Reading Comprehension on Yes/No Question, Baidu Cooperated Project
             bullets:
-              - Developed and refined the model which achieved the top performance on Yes/No dataset
-          - name: Build an annotation tool to handle complex text data, which boost at least speed and quality of annotation task
+              - Developed and refined the model which achieved the top performance on the Yes/No dataset
+          - name: Build an annotation tool to handle complex text data, which boost annotation speed
       - title: Research Engineering
         period: Aug 2015 - Mar 2018
         desc: 
         achivements:
           - name: Target-level Sentiment Analysis of News Title, Baidu Cooperated Project
             bullets:
-              - Developed the model which was interagted into Baidu NLP platform services
+              - Responsible for collecting data, data annotation and feature engineering tasks
+              - Developed and refined the model which was integrated into Baidu NLP API
           - name: Sentiment Analysis of Movie Comments, Baidu Cooperated Project
             bullets:
+              - Responsible for the data annotation and feature engineering task
               - Finetuned the model with 7-8% F1-score improvement
-              - Developed the model which was deployed and satisfied Baidu's platform on 8 domains over 3 products
+              - Model was deployed and satisfied Baidu's platform on 8 domains over 3 products
   
   - name: BA Department, Zalora
     loc: Singapore
@@ -66,7 +67,7 @@ experience:
         achivements:
           - name: Prototype of the MAS of evacuation strategy with BIM-IFC Model
             bullets:
-              - Developed an IFC parser to convert the BIM model into 3D scene
+              - Developed an IFC parser to convert the BIM model into a 3D scene
               - Got the best FYP project prize
 
   - name: IT Department, Keppel Land
@@ -134,7 +135,7 @@ skills:
       - Jinja2
       - Flask
       - HTML/CSS
-      - Javascript
+      - JavaScript
 
   - category: Visualization
     perks:
@@ -152,7 +153,7 @@ interests:
     perks:
       - WoW
       - Overwatch
-      - Pokemon Game
+      - Pokémon Game
       - Skyrim 5
       - Sims/Sims City
       - Pal 1-7
