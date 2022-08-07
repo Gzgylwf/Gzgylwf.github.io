@@ -109,6 +109,15 @@
                                             {% if job.desc %}
                                                 {{job.desc}}
                                             {% endif %}
+
+                                            {%if job.workload %}
+                                                <i class="mt-1"><b>Workloads: </b></i>
+                                                {% for workpart in job.workload %}
+                                                    {% for wk in workpart %}
+                                                        <span class="badge text-bg-light fs-7 mt-1"><i>{{wk}}: {{workpart[wk]}}</i></span>
+                                                    {% endfor %}
+                                                {% endfor %}
+                                            {% endif %}
                                         </p>
                                         <div id="c{{cloop.index}}p{{loop.index}}" style="display: none;">
                                             {% if job.achivements != None and job.achivements|length > 0 %}
