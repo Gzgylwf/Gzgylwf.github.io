@@ -1,191 +1,127 @@
 about:
-  firstName: Wenfeng
-  lastName: LI
-  email: liwenfeng20112012@gmail.com
-  hpSg: +65 8342 2901
-  hpCn: +86 139 8540 7427
+  firstName: Xu
+  lastName: Zhang
+  email: zinkpolymer@gmail.com
+  hpSg: +65 8393 7260
   loc: Singapore
-  github: Gzgylwf
-  ins: gemini_china
   version: en
 
 summary:
-  - Solid 7 years of work experience in programming, data analysis and machine learning on NLP
+  - name: National College Students' Innovation and Entrepreneurship Training Program
+    loc: USA
+    positions:
+      - title: "Program Code: 201610699271"
+        period: May 2016 - Apr 2017
+        desc: 
+        achivements:
+          - name: Research on the fabrication of modified cyanate ester resins/ high modulus poly (p-phenylene-2,6-benzobisoxazole) (HMPBO) fibers wave-transparent composite;
+          - name: Soluble epoxy-terminated PBO precursor (epoxy-prePBO) was fabricated;
+          - name: Wave-transparent composite with 7wt% epoxy-prePBO showed satisfactory dielectric constant (e, 2.68) and dielectric loss tangent (tand, 0.0061) values;
+          - name: Mechanical properties of composites were improved (flexural strength, 658.5 MPa and interlaminar shear strength 48.4 MPa.
+
+researchExperience:
+  - name: National College Students' Innovation and Entrepreneurship Training Program
+    loc: China
+    positions:
+      - title: "Program Code: 201610699271"
+        period: May 2016 - Apr 2017
+        desc: 
+        achivements:
+          - name: Research on the fabrication of modified cyanate ester resins/ high modulus poly (p-phenylene-2,6-benzobisoxazole) (HMPBO) fibers wave-transparent composite;
+          - name: Soluble epoxy-terminated PBO precursor (epoxy-prePBO) was fabricated;
+          - name: Wave-transparent composite with 7wt% epoxy-prePBO showed satisfactory dielectric constant (e, 2.68) and dielectric loss tangent (tand, 0.0061) values
+
+  - name: Study on Preparation of Dopamine-coated Boron Nitride/Polyimide (h-BN/PI) High Thermal Conductivity Composites
+    loc: China
+    positions:
+      - title: ""
+        period: Dec 2018 - Jun 2019
+        desc: 
+        achivements:
+          - name: h-BN nanoparticles modified by dopamine were fabricated;
+          - name: Thermal properties of composites with the loading of 20vol% h-BN were improved (in-plane thermal conductivity as 3.009 W/mK).Research on the fabrication of modified cyanate ester resins/ high modulus poly (p-phenylene-2,6-benzobisoxazole) (HMPBO) fibers wave-transparent composite.
 
 experience:
-  - name: NLP Group, ALI, I2R, AStar
+  - name: Evonik (SEA) Pte Ltd.
     loc: Singapore
     positions:
-      - title: Senior Research Engineering II
-        workload:
-          - Projects: 50%
-          - Research: 30%
-          - Admin: 20%
-        period: Apr 2019 - Present
+      - title: Internship for Research & Development Work
+        period: July 2020 - Apr 2021
         desc: 
         achivements:
-          - name: Customer Satisfaction Analysis of Helpdesk Dialogue, Baidu Cooperated Project
-            bullets:
-              - Developed and refined the model that increase customer about <b>4.6</b> times productivity boost
-              - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement
-          - name: Propose and build the annotation platform which boost the <b>2-3</b> times speed and enhaced the annotation quality
-      - title: Senior Research Engineering I
-        workload:
-          - Projects: 70%
-          - Research: 30%
-        period: Apr 2018 - Mar 2019
-        desc: 
-        achivements:
-          - name: Machine Reading Comprehension on Yes/No Question, Baidu Cooperated Project
-            bullets:
-              - Developed and refined the model which achieved the top <b>3</b> performance on the Yes/No dataset
-          - name: Propose and build an annotation tool for complex text data, which boost <b>1-2</b> times annotation speed
-      - title: Research Engineering
-        workload:
-          - Project: 90%
-          - Research: 10%
-        period: Aug 2015 - Mar 2018
-        desc: 
-        achivements:
-          - name: Target-level Sentiment Analysis of News Title, Baidu Cooperated Project
-            bullets:
-              - Developed and refined the model which was <b>integrated</b> into Baidu NLP API
-              - Created and built about <b>10K</b> chineses news dataset for target-level sentiment analysis
-          - name: Sentiment Analysis of Movie Comments, Baidu Cooperated Project
-            bullets:
-              - Finetuned the model with around <b>7-8%</b> F1-score improvement
-              - Deployed the model on Baidu's platform which satisfied <b>8</b> domains over <b>3</b> products
-              - Create and built about <b>90K</b> comments dataset for sentiment analysis
+          - name: Formulate photopolymer resin and conduct 3D printing work
+          - name: Conduct mechanical and thermal properties testing for plastic materials
+          - name: Participate in housekeeping and research discussion
+          - name: Analyze data and responsible for development of projects and QC of the materials
   
-  - name: BA Department, Zalora
+  - name: Evonik (SEA) Pte Ltd.
     loc: Singapore
-    hidden: 1
     positions:
-      - title: Data Analyst (Internship)
-        workload:
-          - Analysis: 80%
-          - Report: 20%
-        period: Apr 2015 - Jun 2015
+      - title: Chemist (Full time)
+        period: Aug 2021 - Present
         desc: 
         achivements:
-          - name: Create daily/monthly report for global markets
-
-  - name: SDE, National University of Singapore
-    loc: Singapore
-    hidden: 1
-    positions:
-      - title: Intern
-        workload:
-          - Research: 90%
-          - Paper: 10%
-        period: Aug 2014 - Apr 2015
-        desc: 
-        achivements:
-          - name: Prototype of the MAS of evacuation strategy with BIM-IFC Model
-            bullets:
-              - Developed an IFC parser to convert the BIM model into a 3D scene
-              - Got the best FYP project prize
-
-  - name: IT Department, Keppel Land
-    loc: Singapore
-    hidden: 1
-    positions:
-      - title: Intern
-        workload:
-          - Programming: 90%
-          - Report: 10%
-        period: Feb 2013 - Jul 2013
-        desc: 
-        achivements:
-          - name: GO-Mobile Internal Applications
-            bullets:
-              - Launched 3 applications on IOS and Android platforms
+          - name: Collaborate with APE academic team on course preparation;
+          - name: Research and develop new curriculum materials;
+          - name: Travel to partner schools and teach classes required;
+          - name: Assist academic on other curriculum development on a project basis.
 
 education:
-  - name: Institute of System Science, National University of Singapore
+  - name: German Institute of Science and Technology, TUM-Asia, NUS
     loc: Singapore
     logo: nus.png
     positions:
-      - title: Master of Technology in Knowledge of Engineering
-        period: Jan 2014 - Aug 2015
+      - title: Master of Science in Industrial Chemistry (Distinction)
+        period: Jul 2019 - Apr 2021
         achivements:
-          - GPA 4.19/5.0, Top <b>10%</b>
-          - The <b>Best</b> FYP project prize
+          - NUS CAP 4.38/5
+          - TUM CAP 1.3/5 (1)
 
-      - title: Graduate Diploma of System Analysis
-        period: Aug 2012 - Aug 2013
-        achivements:
-          - GPA 4.41/5.0, Top <b>3</b>
-
-  - name: Computer Science and Technology, Harbin Institute of Technology
+  - name: Northwestern Polytechnical University, NWPU
     loc: China
     logo: hit.png
     positions:
-      - title: Bachelor of Computer Science and Technology
-        period: Sep 2008 - Jul 2012
+      - title: Bachelor of Engineering in Polymer Science and Materials
+        period: Sep 2015 - Jul 2019
         achivements:
-          - GPA 82.4/100.0, Top <b>10%</b>
+          - GPA 87/100
 
 skills:
   - category: Language
     perks:
-      - Mandarin
-      - English
+      - Chinese (Native proficiency)
+      - English (Professional working proficiency)
       
-  - category: Programming
+  - category: Measure Tools
     perks:
-      - Python
-      - Java
-      - C/C++
+      - FTIR
+      - TGA
+      - DMA
+      - Injection and Modelling Machine
+      - Polarizing Optical Microscope
+      - Single-fiber pull-out Test
+      - Transient Plant Source Method
 
-  - category: ML
+  - category: Software
     perks:
-      - Tensorflow
-      - Pytorch
-      - Scikit-learn
-      - AllenNLP
-
-  - category: Database
-    perks:
-      - MySQL
-      - MangoDB
-
-  - category: Web Dev
-    perks:
-      - Jinja2
-      - Flask
-      - HTML/CSS
-      - JavaScript
-
-  - category: Visualization
-    perks:
-      - PivotChart
-      - D3.js
-      - Tableau
+      - ChemDraw
+      - OriginLab
+      - MS Office
 
 awards:
-  - Deep Learning Specialization by DeepLearning.AI, Coursera. No.BDQ6PV84R4VU, May 2019
-  - Google Cloud Big Data and Machine Learning Fundamentals, Coursera. No.3C5P9W8A53NW, Jan 2022
-  - Introduction to TensorFlow, Coursera. No.T6K3GLP5XUCQ, Mar 2022
+  - Outstanding Volunteer Award in IICC-X&NPUMUN Conference, May 2018
+  - Honorable Mention Award in Mathematical Contest in Modeling/Interdisciplinary Contest in Modeling (MCM/ICM), Apr 2018
+  - NWPU First-class Scholarship, CY 2017 – 2018
+  - Second Prize in Chemistry Experiment Competition of NWPU, Oct 2017
+  - Distinguished Delegation Award in National MUN (NMUN-New York), Apr 2017
+  - NWPU First-class Scholarship, CY 2016 – 2017
+  - NWPU First-class Scholarship, CY 2015 – 2016
+
+publications:
+  - Junwei Gu, Wencai Dong, Yusheng Tang, Yongqiang Guo, Lin Tang, Jie Kong*, Sruthi Tadakamalla, Bin Wang and Zhanhu Guo. Journal of Materials Chemistry C, 2017, 10.1039/C7TC00222J. IF=5.066.
+  - Junwei Gu, Shuang Xu, Yusheng Tang, Jie Kong, and Lin Tang. A method of the fabrication of epoxy-terminated p-phenylene-2,6-benzobisoxazole precursor. Chinese Application Number(201610887370.0) (2016-10-11), CN 106478712 A (2017-03-08).
 
 interests:
   - category: Game
     perks:
       - WoW
-      - Overwatch
-      - Pokémon Game
-      - Skyrim 5
-      - Sims/Sims City
-      - Pal 1-7
-      - Minecraft
-
-  - category: Sport
-    perks:
-      - Swimming
-      - Skating
-
-  - category: hobby
-    perks:
-      - Singing
-      - Shopping
-      - Cooking

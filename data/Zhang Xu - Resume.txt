@@ -1,0 +1,96 @@
+= name
+ZHANG Xu
+
+= info-under-line
+
+# Email:
+zinkpolymer@gmail.com
+# HP:
++65 8393 7260
+
+= quick-info-panel
+
+# Languages
+Chinese (Native)
+English (IELTS 6.5)
+
+# Skills
+## Measure Tools
+FTIR
+TGA
+DMA
+Injection and Modelling Machine
+Polarizing Optical Microscope
+Single-fiber pull-out Test
+Transient Plant Source Method
+
+## Software
+ChemDraw
+AutoCAD
+Aspen Plus
+MS Office
+
+= detail-info-panel
+
+# Academic Experience
+## German Institute of Science and Technology, TUM-Asia, NUS, Singapore
+> Master of Science in Industrial Chemistry
+@ Jul 2019 - Present
+
+> Bachelor of Engineering in Polymer Science and Materials (GPA 87/100)
+@ Sep 2015 - Jul 2019
+
+# Research Experience
+## National College Students' Innovation and Entrepreneurship Training Program
+> Program Code: 201610699271
+@ May 2016 - Apr 2017
+Research on the fabrication of modified cyanate ester resins/ high modulus poly (p-phenylene-2,6-benzobisoxazole) (HMPBO) fibers wave-transparent composite;
+Soluble epoxy-terminated PBO precursor (epoxy-prePBO) was fabricated;
+Wave-transparent composite with 7wt% epoxy-prePBO showed satisfactory dielectric constant (e, 2.68) and dielectric loss tangent (tand, 0.0061) values;
+Mechanical properties of composites were improved (flexural strength, 658.5 MPa and interlaminar shear strength 48.4 MPa.
+
+. Publications
+Junwei Gu, Wencai Dong, Yusheng Tang, Yongqiang Guo, Lin Tang, Jie Kong*, Sruthi Tadakamalla, Bin Wang and Zhanhu Guo. Journal of Materials Chemistry C, 2017, 10.1039/C7TC00222J. IF=5.066.
+Junwei Gu, Shuang Xu, Yusheng Tang, Jie Kong, and Lin Tang. A method of the fabrication of epoxy-terminated p-phenylene-2,6-benzobisoxazole precursor. Chinese Application Number: 201610887370.0 (2016-10-11), Publication Number: CN 106478712 A (2017-03-08).
+
+## Study on Preparation of Dopamine-coated Boron Nitride/Polyimide (h-BN/PI) High Thermal Conductivity Composites
+@ Dec 2018 - Jun 2019
+h-BN nanoparticles modified by dopamine were fabricated;
+Thermal properties of composites with the loading of 20vol% h-BN were improved (in-plane thermal conductivity as 3.009 W/mK).
+
+# Work Experience
+## Alpha Partners Education (APE) Co., Ltd
+> Model United Nations (MUN) Instructor
+@ Sep 2018 - Dec 2018
+Collaborate with APE academic team on course preparation;
+Research and develop new curriculum materials;
+Travel to partner schools and teach classes required;
+Assist academic on other curriculum development on a project basis.
+
+# Activities
+## International Council on Monuments and Sites and International Conservation Center-Xi’an & NPUMUN (IICC-X&NPUMUN) Conference
+> Volunteer at Conference Halls
+@ May 2018
+
+. Key Responsibilities
+Guide delegates to enter the appointed conference halls and deal with their belongings during each session;
+Assist dais and delegates to pass notes and microphones in conferences;
+Print related documents for dais and delegates;
+Clean the conference halls after the end of each session.
+
+# Awards
+Outstanding Volunteer Award in IICC-X&NPUMUN Conference
+@ May 2018
+Honorable Mention Award in Mathematical Contest in Modeling/Interdisciplinary Contest in Modeling (MCM/ICM)
+@ Apr 2018
+NWPU First-class Scholarship
+@ CY 2017 – 2018
+Second Prize in Chemistry Experiment Competition of NWPU
+@ Oct 2017
+Distinguished Delegation Award in National MUN (NMUN-New York)
+@ Apr 2017
+NWPU First-class Scholarship
+@ CY 2016 – 2017
+NWPU First-class Scholarship
+@ CY 2015 – 2016
+

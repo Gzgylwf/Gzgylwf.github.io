@@ -19,8 +19,10 @@ def render(object, template, outputFn):
         title = "Personal Page - {} {}".format(object['about']['lastName'], object['about']['firstName']),
         sessAbout = object['about'],
         sessExp = object['experience'],
+        sessResearchExp = object['researchExperience'],
         sessEdu = object['education'],
         sessSkill = object['skills'],
+        sessPublications = object['publications'],
         sessAwards = object['awards'],
         sessSummary = object['summary'],
         sessInterests = object['interests']

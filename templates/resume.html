@@ -29,7 +29,9 @@
                     <b><i class="fa fa-mobile inline-icon">:</i></b>
                         <span class="me-1">{{sessAbout.hpSg}}</span>
                         <!--span class="me-1">&bull; {{sessAbout.hpCn}}</span-->
-                    <b><i class="fab fa-github inline-icon">:</i></b> <span class="me-2">{{ sessAbout.github }}</span>
+                    <!--
+                        <b><i class="fab fa-github inline-icon">:</i></b> <span class="me-2">{{ sessAbout.github }}</span>
+                    -->
                 </div>
             </div>
 
@@ -75,9 +77,71 @@
                         {% endfor %}
                     </div-->
 
+                    <!-- Research Experiences -->
                     <div class="session">
                         {% if sessAbout.version == 'en' %}
-                            <div class="title dark-text">Work Experience (Recent)</div>
+                            <div class="title dark-text">Research Experience</div>
+                        {% elif sessAbout.version == 'cn' %}
+                            <div class="title dark-text">近期工作经历</div>
+                        {% endif %}
+
+                        {% for comp in sessResearchExp %}
+                        {% if 'hidden' not in comp %}
+                        <div class="sub mb-1">{{comp.name}}, <i>{{comp.loc}}</i></div>
+                            {% for job in comp.positions %}
+                            {% if 'hidden' not in job %}
+                            <div class="card">
+                                <div class="card-header justify-content-between bg-light-grey border-0 pt-0 pb-1">
+                                    <div class="row sub-font mb-0">
+                                        <div class="col sub-font"><i>{{job.title}}</i></div>
+                                        <div class="col text-end theme-text"><i>{{job.period}}</i></div>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0 pb-1 ms-2">
+                                    {% if job.desc %}
+                                    <div>{{job.desc}}</div>
+                                    {% endif %}
+
+                                    {%if job.workload %}
+                                        <i class="mt-1"><b>Workloads: </b></i>
+                                        {% for workpart in job.workload %}
+                                            {% for wk in workpart %}
+                                                <span class="badge text-bg-light fs-7 mt-1"><i>{{wk}}: {{workpart[wk]}}</i></span>
+                                            {% endfor %}
+                                        {% endfor %}
+                                    {% endif %}
+
+                                    {% if job.achivements != None and job.achivements|length > 0 %}
+                                        {% if sessAbout.version == 'en' %}
+                                            <div class="sub-sub"><i>Projects & Achievements:</i></div>
+                                        {% elif sessAbout.version == 'cn' %}
+                                            <div class="sub-sub"><i>参与项目及成果:</i></div>
+                                        {% endif %}
+
+                                        {% for achive in job.achivements %}
+                                            {% if 'bullets' in achive %}
+                                                <p><i class="fas fa-angle-right inline-icon"></i><I>{{achive.name}}</I></p>
+                                                <ul class="mb-2">
+                                                    {% for bullet in achive.bullets %}
+                                                        <li class="bullet">{{bullet}}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% else %}
+                                                <p><i class="fas fa-angle-right inline-icon"></i>{{achive.name}}</p>
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+
+                    <div class="session">
+                        {% if sessAbout.version == 'en' %}
+                            <div class="title dark-text">Work Experience</div>
                         {% elif sessAbout.version == 'cn' %}
                             <div class="title dark-text">近期工作经历</div>
                         {% endif %}
@@ -165,6 +229,18 @@
                             {% endif %}
                             {% endfor %}
                         {% endif %}
+                        {% endfor %}
+                    </div>
+
+                    <div class="session">
+                        {% if sessAbout.version == 'en' %}
+                            <div class="title dark-text">Publications</div>
+                        {% elif sessAbout.version == 'cn' %}
+                            <div class="title dark-text">论文</div>
+                        {% endif %}
+
+                        {% for pub in sessPublications %}
+                            <div class="ps-3 mt-1"><i class="fas fa-angle-right inline-icon"></i>{{pub}}</div>
                         {% endfor %}
                     </div>
 
