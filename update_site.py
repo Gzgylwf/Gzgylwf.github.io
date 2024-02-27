@@ -5,7 +5,6 @@ import io
 import os
 import yaml
 
-
 def readResume(fn):
     ret = yaml.safe_load(open(fn, 'rb'))
     return ret
@@ -13,19 +12,30 @@ def readResume(fn):
 def saveResume(resume, fn):
     yaml.safe_dump(resume, open(fn, 'w'))
 
-def render(object, template, outputFn):
+def render(data: dict, template, outputFn):
     template = env.get_template(template)
+    # print(data)
+    # output = template.render(
+    #     title = "Personal Page - {} {}".format(object['about']['lastName'], object['about']['firstName']),
+    #     sessAbout = object['about'],
+    #     sessExp = object['experience'],
+    #     sessResearchExp = object['researchExperience'],
+    #     sessEdu = object['education'],
+    #     sessSkill = object['skills'],
+    #     sessPublications = object['publications'],
+    #     sessAwards = object['awards'],
+    #     sessSummary = object['summary'],
+    #     sessInterests = object['interests']
+    # )
+    ignore_fields = ['summary', 'interests']
+    for field in ignore_fields:
+        if field in data: data.pop(field)
+
     output = template.render(
-        title = "Personal Page - {} {}".format(object['about']['lastName'], object['about']['firstName']),
-        sessAbout = object['about'],
-        sessExp = object['experience'],
-        sessResearchExp = object['researchExperience'],
-        sessEdu = object['education'],
-        sessSkill = object['skills'],
-        sessPublications = object['publications'],
-        sessAwards = object['awards'],
-        sessSummary = object['summary'],
-        sessInterests = object['interests']
+        title = f"Personal Page - {data['about']['lastName']} {data['about']['firstName']}",
+        about=data.pop('about'),
+        skills=data.pop('skills'),
+        resume=data
     )
     # Save to file
     with io.open(outputFn, "w") as f:
@@ -38,7 +48,8 @@ if __name__ == "__main__":
     if os.path.exists('data/resume_cn.yaml'): resumeCN = readResume('data/resume_cn.yaml')
     
     env = Environment(loader=FileSystemLoader("templates"))
-    templatesFiles = ['index', 'resume']
+    #templatesFiles = ['index', 'resume']
+    templatesFiles = ['resume-tw']
 
     for templateFile in templatesFiles:
         render(resume, "{}.html".format(templateFile), "{}.html".format(templateFile))
