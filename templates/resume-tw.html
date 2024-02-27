@@ -66,13 +66,13 @@
                                 {% if item is string %}
                                 <div class="flex ms-2">
                                     {% if '@' in item %}
-                                    <div class="flex w-full justify-between me-2">
+                                    <div class="w-full me-2 grid grid-cols-12">
                                         {% set item_text = item.split('@')[0] %}
                                         {% set item_date = item.split('@')[1] %}
-                                        <div>
+                                        <div class="col-span-9">
                                             <span class="font-semibold me-2">></span>{{item_text}}
                                         </div>
-                                        <div class="font-semibold text-gray-500">
+                                        <div class="col-span-3 font-semibold text-gray-500 text-right">
                                             {{item_date}}
                                         </div>
                                     </div>
@@ -85,44 +85,45 @@
 
                                 <!-- Complex item -->
                                 {% elif item is mapping %}
-                                <div class="flex justify-between px-2 bg-sky-100">
-                                    <!-- Title, subtitle and location -->
-                                    <div class="flex flex-col">
-                                        <div class="font-semibold mb-0 pb-0">
-                                            {{item.title}}
-                                            {% if 'loc' in item %}
-                                            <span>
-                                                , {{item.loc}}
-                                            </span>
-                                            {% endif %}
+                                <div class="mb-4">
+                                    <div class="grid grid-cols-12 px-2 bg-sky-100">
+                                        <!-- Title, subtitle and location -->
+                                        <div class="col-span-9">
+                                            <div class="font-semibold mb-0 pb-0">
+                                                {{item.title}}
+                                                {% if 'loc' in item %}
+                                                <span>
+                                                    , {{item.loc}}
+                                                </span>
+                                                {% endif %}
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!-- Period and date -->
-                                    {% if 'period' in item %}
-                                    <div class="font-semibold text-sky-600 mb-0">
-                                        {{item.period}}
-                                    </div>
-                                    {% endif %}
-                                </div>
-
-                                <!-- If have sub titile -->
-                                {% if 'subTitle' in item %}
-                                <div class="mt-0 p-0 ms-2 text-gray-500 text-sm font-semibold italic">
-                                    {{item.subTitle}}
-                                </div>
-                                {% endif %}
-                                
-                                <!-- If have list bullets -->
-                                {% if 'achivements' in item %}
-                                <div class="mb-2 flex flex-col ms-4 text-md">
-                                    {% for achivement in item.achivements%}
-                                        <div class="flex">
-                                            <span class="font-semibold me-2">></span>{{achivement}}
+                                        <!-- Period and date -->
+                                        {% if 'period' in item %}
+                                        <div class="font-semibold text-sky-600 mb-0 col-span-3 text-right">
+                                            {{item.period}}
                                         </div>
-                                    {% endfor %}
-                                </div>
-                                {% endif %}
+                                        {% endif %}
+                                    </div>
 
+                                        <!-- If have sub titile -->
+                                        {% if 'subTitle' in item %}
+                                        <div class="mt-0 p-0 ms-2 text-gray-500 text-sm font-semibold italic">
+                                            {{item.subTitle}}
+                                        </div>
+                                        {% endif %}
+                                        
+                                        <!-- If have list bullets -->
+                                        {% if 'achivements' in item %}
+                                        <div class="mb-2 flex flex-col ms-4 text-md">
+                                            {% for achivement in item.achivements%}
+                                                <div class="flex">
+                                                    <span class="font-semibold me-2">></span>{{achivement}}
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                        {% endif %}
+                                    </div>
                                 {% endif %}
                             {% endfor %}
                         </div>
