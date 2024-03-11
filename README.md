@@ -18,3 +18,5 @@ python update_site.py
 ## 3. __Open and print the resume__
 
 Open the resume.html page and print out to replace the .pdf resume in the root directory. Then the personal page can download normally.
+
+# Remake with NLP lab
