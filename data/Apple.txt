@@ -1,0 +1,18 @@
+position: Machine Learning Engineer, AI+ML Search Language Science
+company: Apple SG
+name: Li Wenfeng
+email: gemini_china@gmail.com
+hp: +65 8342 2901
+# Above is the basic information
+
+Dear Apple, 
+
+I am writing to express my interest in the Machine Learning Engineer, AI+ML Search Language Science position. I learned about this position on LinkedIn and have gone through the job description. The opportunity is attractive and I think my experience matches the expectation. 
+  
+Currently, I am working as Senior Research Engineering in the NLP group at I2R, AStar. One of my major responsibility is to build the data pipeline of our projects. The data is formatted in sentences and a more complex format. That makes me very familiar with text processing and info retrieval. And I am also involved in the development and improvement of kinds of ML models with DNN, RNN and Transformer modules. In my past projects, our delivered model got certain precision and recall improvement after the feature engineering and analysis.
+  
+Besides, the most attractive point of the position is to impact billion of people on worldwide. I believe that every engineer is like our effort to change people's life and Apple is a perfect platform to achieve the target. 
+  
+I would like to have a chance to meet with you and discuss the opportunities. Please let me know if you have any questions. 
+  
+Thank you for your consideration. 
