@@ -1,171 +1,102 @@
 about:
-  firstName: Wenfeng
-  lastName: LI
-  email: liwenfeng20112012@gmail.com
-  hpSg: +65 8342 2901
-  hpCn: +86 139 8540 7427
+  firstName: Xu
+  lastName: Zhang
+  email: zinkpolymer@gmail.com
+  hpSg: +65 8393 7260
   loc: Singapore
-  github: Gzgylwf
-  ins: gemini_china
   version: en
-
-summary:
-  - Solid 7 years of work experience in programming, data analysis and machine learning on NLP
-
-experience:
-  - name: NLP Group, ALI, I2R, AStar
-    loc: Singapore
-    positions:
-      - title: Senior Research Engineering II
-        period: Apr 2019 - Present
-        desc: 
-        achivements:
-          - name: Customer Satisfaction Analysis of Helpdesk Dialogue, Baidu Cooperated Project [On-going]
-            bullets:
-              - Responsible for building the data pipeline, managing the annotation process, feature engineering and model improvement
-              - Work as Co-PI to track and manage the project schedule, manpower and budget analysis for supporting decision making
-          - name: Build an annotation platform to handle annotation of conversation data, which boost the speed and monitor the quality of annotation
-      - title: Senior Research Engineering I
-        period: Apr 2018 - Mar 2019
-        desc: 
-        achivements:
-          - name: Machine Reading Comprehension on Yes/No Question, Baidu Cooperated Project
-            bullets:
-              - Developed and refined the model which achieved the top performance on the Yes/No dataset
-          - name: Build an annotation tool to handle complex text data, which boost annotation speed
-      - title: Research Engineering
-        period: Aug 2015 - Mar 2018
-        desc: 
-        achivements:
-          - name: Target-level Sentiment Analysis of News Title, Baidu Cooperated Project
-            bullets:
-              - Responsible for collecting data, data annotation and feature engineering tasks
-              - Developed and refined the model which was integrated into Baidu NLP API
-          - name: Sentiment Analysis of Movie Comments, Baidu Cooperated Project
-            bullets:
-              - Responsible for the data annotation and feature engineering task
-              - Finetuned the model with 7-8% F1-score improvement
-              - Model was deployed and satisfied Baidu's platform on 8 domains over 3 products
-  
-  - name: BA Department, Zalora
-    loc: Singapore
-    hidden: 1
-    positions:
-      - title: Data Analyst (Internship)
-        period: Apr 2015 - Jun 2015
-        desc: 
-        achivements:
-          - name: Create daily/monthly report for global markets
-
-  - name: SDE, National University of Singapore
-    loc: Singapore
-    hidden: 1
-    positions:
-      - title: Intern
-        period: Aug 2014 - Apr 2015
-        desc: 
-        achivements:
-          - name: Prototype of the MAS of evacuation strategy with BIM-IFC Model
-            bullets:
-              - Developed an IFC parser to convert the BIM model into a 3D scene
-              - Got the best FYP project prize
-
-  - name: IT Department, Keppel Land
-    loc: Singapore
-    hidden: 1
-    positions:
-      - title: Intern
-        period: Feb 2013 - Jul 2013
-        desc: 
-        achivements:
-          - name: GO-Mobile Internal Applications
-            bullets:
-              - Launched 3 applications on IOS and Android platforms
-
-education:
-  - name: Institute of System Science, National University of Singapore
-    loc: Singapore
-    logo: nus.png
-    positions:
-      - title: Master of Technology in Knowledge of Engineering
-        period: Jan 2014 - Aug 2015
-        achivements:
-          - GPA 4.19/5.0, Top 10%
-          - The Best FYP project prize
-
-      - title: Graduate Diploma of System Analysis
-        period: Aug 2012 - Aug 2013
-        achivements:
-          - GPA 4.41/5.0, Top 3
-
-  - name: Computer Science and Technology, Harbin Institute of Technology
-    loc: China
-    logo: hit.png
-    positions:
-      - title: Bachelor of Computer Science and Technology
-        period: Sep 2008 - Jul 2012
-        achivements:
-          - GPA 82.4/100.0, Top 10%
 
 skills:
   - category: Language
     perks:
-      - Mandarin
-      - English
+      - Chinese (Native proficiency)
+      - English (Professional working proficiency)
       
-  - category: Programming
+  - category: Skills
     perks:
-      - Python
-      - Java
-      - C/C++
+      - Digital Light Printing (DLP) technology
+      - Mechanical and thermal properties testing (Tensile, Impact, HDT, DSC tester)
+      - Accelerated Weathering Tester
+      - Innovation Yellow Belt certificate (six sigma)
+      - Respond to Fire Incident in Workplace certificate
+      - Transient Plant Source Method
 
-  - category: ML
+  - category: Software
     perks:
-      - Tensorflow
-      - Pytorch
-      - Scikit-learn
+      - ChemDraw
+      - OriginLab
+      - MS Office
+      
+Education:
+  - title: Master of Science in Industrial Chemistry (Distinction)
+    subTitle: German Institute of Science and Technology, TUM-Asia, NUS, Singapore
+    period: Jul 2019 - Apr 2021
+    achivements:
+      - NUS CAP 4.38/5
+      - TUM CAP 1.3/5 (1 for full CAP)
 
-  - category: Database
-    perks:
-      - MySQL
-      - MangoDB
+  - title: Bachelor of Engineering in Polymer Science and Materials
+    subTitle: Northwestern Polytechnical University, NWPU, China
+    period: Sep 2015 - Jul 2019
+    achivements:
+      - GPA 87/100 (top 10%)
 
-  - category: Web Dev
-    perks:
-      - Jinja2
-      - Flask
-      - HTML/CSS
-      - JavaScript
+Research Experience:
+  - title: National College Students' Innovation and Entrepreneurship Training Program
+    subTitle: "Program Code: 201610699271"
+    loc: China
+    period: May 2016 - Apr 2017 (Bachelor)
+    achivements:
+      - Research on the fabrication of modified cyanate ester resins/ high modulus poly (p-phenylene-2,6-benzobisoxazole) (HMPBO) fibers wave-transparent composite;
+      - Soluble epoxy-terminated PBO precursor (epoxy-prePBO) was fabricated;
+      - Wave-transparent composite with 7wt% epoxy-prePBO showed satisfactory dielectric constant (e, 2.68) and dielectric loss tangent (tand, 0.0061) values.
 
-  - category: Visualization
-    perks:
-      - PivotChart
-      - D3.js
-      - Tableau
+  - title: Study on Preparation of Dopamine-coated Boron Nitride/Polyimide (h-BN/PI) High Thermal Conductivity Composites
+    loc: China
+    period: Dec 2018 - Jun 2019 (Bachelor)
+    achivements:
+      - h-BN nanoparticles modified by dopamine were fabricated;
+      - Thermal properties of composites with the loading of 20vol% h-BN were improved (in-plane thermal conductivity as 3.009 W/mK).Research on the fabrication of modified cyanate ester resins/ high modulus poly (p-phenylene-2,6-benzobisoxazole) (HMPBO) fibers wave-transparent composite.
 
-awards:
-  - Deep Learning Specialization by DeepLearning.AI, Coursera. No.BDQ6PV84R4VU, May 2019
-  - Google Cloud Big Data and Machine Learning Fundamentals, Coursera. No.3C5P9W8A53NW, Jan 2022
-  - Introduction to TensorFlow, Coursera. No.T6K3GLP5XUCQ, Mar 2022
+Work Experience:
+  - title: Chemist (Full time)
+    subTitle: Evonik (SEA) Pte Ltd., Singapore
+    period: Aug 2021 - Present
+    achivements:
+      - Daily lab work (formulation making, resin printing, testing, and housekeeping activities);
+      - Analyze lab data, independently summerize and make proposals for the further steps;
+      - Ability to operate DLP printers and troubleshoot or adjust printing parameters independently;
+      - Work on ESTER system (EHSQ) to fulfill the safety of operating equipment in lab;
+      - Assist in onboarding training of new joiners (Interns, contractors or trainees).
+    projects:
+      - name: Phoenix Project
+        achivements:
+          - Participate in and conduct the formulation, printing and testing jobs for project Phoenix (INFINAM ST6100L, a photopolymer material exhibits excellent mechanical and high temperature resistance);
+          - Conduct resin iteration, postcuring study, daily sample printing, characterization and aging study.
+      - name: Phlame Project
+        achivements:
+          - Participate in and work as a lead chemist in project Phlame (INFINAM FR 4100L, a photopolymer material exhibits flame retardant and mechanically durable after cured);
+          - Optimize printing settings, postcuring study, aging and chemical resistance study, supporting data generation for IP work;
+          - Continously work with customers to address the technical problems encountered.
 
-interests:
-  - category: Game
-    perks:
-      - WoW
-      - Overwatch
-      - Pokémon Game
-      - Skyrim 5
-      - Sims/Sims City
-      - Pal 1-7
-      - Minecraft
+  - title: Internship for Research & Development Work
+    subTitle: Evonik (SEA) Pte Ltd., Singapore
+    period: July 2020 - Apr 2021
+    achivements:
+      - Formulate photopolymer resin and conduct 3D printing work
+      - Conduct mechanical and thermal properties testing for plastic materials
+      - Participate in housekeeping and research discussion
+      - Analyze data and responsible for development of projects and QC of the materials
 
-  - category: Sport
-    perks:
-      - Swimming
-      - Skating
+Awards:
+  - DAAD Scholarship@CY 2020-2021
+  - Outstanding Volunteer Award in IICC-X&NPUMUN Conference@May 2018
+  - Honorable Mention Award in Mathematical Contest in Modeling/Interdisciplinary Contest in Modeling (MCM/ICM)@Apr 2018
+  - NWPU First-class Scholarship@CY 2017 - 2018
+  - Distinguished Delegation Award in National MUN (NMUN-New York)@Apr 2017
+  - NWPU First-class Scholarship@CY 2016 - 2017
+  - NWPU First-class Scholarship@CY 2015 - 2016
 
-  - category: hobby
-    perks:
-      - Singing
-      - Shopping
-      - Cooking
+Publications:
+  - Dongliang Ding, Zhihui Shang, <u>Xu Zhang</u>, Xingfeng Lei, Zhenguo Liu, Qiuyu Zhang, and Yanhui Chen. <i>Creamics International</i>, 2020 (Bachelor thesis work);
+  - Tough Flame-Retardant Radiation Curable Composition for Additive Manufacturing (Halogen-free), 2023E00236 SG, Inventor, 2023 (Projetc Phlame).

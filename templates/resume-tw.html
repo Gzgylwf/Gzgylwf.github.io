@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>{{ title }}</title>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!--
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="css/resume.css" rel="stylesheet" />
+        <link href="css/all.css" rel="stylesheet" />
+        -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Font -->
+        <!--
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+        -->
+    </head>
+
+    <body>
+        <div class="flex flex-col mx-3 my-3 lining-nums slashed-zero">
+            <!-- Personal Info -->
+            <div id="head" class="flex flex-col border-b-2 border-sky-600 border-double">
+                <div class="flex font-bold text-3xl">
+                    <span class="text-sky-600 uppercase">{{about.lastName}}</span>
+                    <span class="ms-2">{{about.firstName}}</span>
+                </div>
+                <div class="flex mt-0 mb-2 text-sm">
+                    <div><span class="font-semibold">Email:</span> {{about.email}}</div>
+                    <div class="ms-3"><span class="font-semibold">HP:</span> {{about.hpSg}}</div>
+                </div>
+            </div>
+
+            <!-- Resume Body -->
+            <div class="grid grid-cols-12 gap-1">
+                <div id="skills" class="flex flex-col col-span-3 border-e-2 border-sky-600 border-double me-2">
+                    {% for skillGroup in skills %}
+                    <div class="flex flex-col">
+                        <div class="font-bold mt-2 text-lg">
+                            {{skillGroup.category}}
+                        </div>
+                        {% for perk in skillGroup.perks %}
+                        <div class="ms-2 text-base flex">
+                            <span class="font-semibold me-2">·</span>
+                            <span class="me-3 text-justify">{{perk}}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <!-- Experience -->
+                <div id="body" class="flex flex-col col-span-9 ms-2">
+                    {% for title, items in resume.items() %}
+                    <div class="flex flex-col mt-2">
+                        <div class="font-bold text-lg">
+                            {{title}}
+                        </div>
+                        <div class="ms-0 text-base">
+                            {% for item in items %}
+                                <!-- Simple String -->
+                                {% if item is string %}
+                                <div class="flex ms-2">
+                                    {% if '@' in item %}
+                                    <div class="w-full me-2 grid grid-cols-12">
+                                        {% set item_text = item.split('@')[0] %}
+                                        {% set item_date = item.split('@')[1] %}
+                                        <div class="col-span-10">
+                                            <span class="font-semibold me-2">·</span><span class="text-justify">{{item_text}}</span>
+                                        </div>
+                                        <div class="col-span-2 font-semibold text-gray-500 text-right">
+                                            {{item_date}}
+                                        </div>
+                                    </div>
+                                    {% else %}
+                                    <div class="w-full me-2 grid grid-cols-12">
+                                        <div class="flex col-span-10">
+                                            <span class="font-semibold me-2">·</span><span class="text-justify">{{item | safe}}</span>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                </div>
+
+                                <!-- Complex item -->
+                                {% elif item is mapping %}
+                                <div class="mb-4">
+                                    <div class="grid grid-cols-12 px-2 bg-sky-100">
+                                        <!-- Title, subtitle and location -->
+                                        <div class="col-span-10">
+                                            <div class="font-semibold mb-0 pb-0">
+                                                {{item.title}}
+                                                {% if 'loc' in item %}
+                                                <span>
+                                                    , {{item.loc}}
+                                                </span>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                        <!-- Period and date -->
+                                        {% if 'period' in item %}
+                                        <div class="font-semibold text-sky-600 mb-0 col-span-2 text-right">
+                                            {{item.period}}
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                    
+                                    
+                                        <!-- If have sub titile -->
+                                        {% if 'subTitle' in item %}
+                                        <div class="mt-0 p-0 ms-2 text-gray-500 text-sm font-semibold italic">
+                                            {{item.subTitle}}
+                                        </div>
+                                        {% endif %}
+
+                                    <div class="grid grid-cols-12">
+                                        <!-- If have list bullets -->
+                                        {% if 'achivements' in item %}
+                                        <div class="mb-2 flex flex-col ms-4 text-md col-span-10">
+                                            {% for achivement in item.achivements%}
+                                                <div class="flex">
+                                                    <span class="font-semibold me-2">·</span><span class="text-justify">{{achivement}}</span>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                        {% endif %}
+
+                                        <!-- If have sub project -->
+                                        {% if 'projects' in item %}
+                                        <div class="mb-2 flex flex-col ms-4 text-md col-span-10">
+                                            {% for project in item.projects %}
+                                                <div class="flex flex-col">
+                                                    <div class="text-gray-500 text-sm">{{project.name}}</div>
+                                                    {% for project_achivement in project.achivements %}
+                                                    <div class="flex">
+                                                        <span class="font-semibold me-2">·</span><span class="text-justify">{{project_achivement}}</span>
+                                                    </div>
+                                                    {% endfor %}
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

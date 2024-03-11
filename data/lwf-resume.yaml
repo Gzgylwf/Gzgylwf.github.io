@@ -1,0 +1,191 @@
+about:
+  firstName: Wenfeng
+  lastName: LI
+  email: liwenfeng20112012@gmail.com
+  hpSg: +65 8342 2901
+  hpCn: +86 139 8540 7427
+  loc: Singapore
+  github: Gzgylwf
+  ins: gemini_china
+  version: en
+
+summary:
+  - Solid 7 years of work experience in programming, data analysis and machine learning on NLP
+
+experience:
+  - name: NLP Group, ALI, I2R, AStar
+    loc: Singapore
+    positions:
+      - title: Senior Research Engineering II
+        workload:
+          - Projects: 50%
+          - Research: 30%
+          - Admin: 20%
+        period: Apr 2019 - Present
+        desc: 
+        achivements:
+          - name: Customer Satisfaction Analysis of Helpdesk Dialogue, Baidu Cooperated Project
+            bullets:
+              - Developed and refined the model that increase customer about <b>4.6</b> times productivity boost
+              - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement
+          - name: Propose and build the annotation platform which boost the <b>2-3</b> times speed and enhaced the annotation quality
+      - title: Senior Research Engineering I
+        workload:
+          - Projects: 70%
+          - Research: 30%
+        period: Apr 2018 - Mar 2019
+        desc: 
+        achivements:
+          - name: Machine Reading Comprehension on Yes/No Question, Baidu Cooperated Project
+            bullets:
+              - Developed and refined the model which achieved the top <b>3</b> performance on the Yes/No dataset
+          - name: Propose and build an annotation tool for complex text data, which boost <b>1-2</b> times annotation speed
+      - title: Research Engineering
+        workload:
+          - Project: 90%
+          - Research: 10%
+        period: Aug 2015 - Mar 2018
+        desc: 
+        achivements:
+          - name: Target-level Sentiment Analysis of News Title, Baidu Cooperated Project
+            bullets:
+              - Developed and refined the model which was <b>integrated</b> into Baidu NLP API
+              - Created and built about <b>10K</b> chineses news dataset for target-level sentiment analysis
+          - name: Sentiment Analysis of Movie Comments, Baidu Cooperated Project
+            bullets:
+              - Finetuned the model with around <b>7-8%</b> F1-score improvement
+              - Deployed the model on Baidu's platform which satisfied <b>8</b> domains over <b>3</b> products
+              - Create and built about <b>90K</b> comments dataset for sentiment analysis
+  
+  - name: BA Department, Zalora
+    loc: Singapore
+    hidden: 1
+    positions:
+      - title: Data Analyst (Internship)
+        workload:
+          - Analysis: 80%
+          - Report: 20%
+        period: Apr 2015 - Jun 2015
+        desc: 
+        achivements:
+          - name: Create daily/monthly report for global markets
+
+  - name: SDE, National University of Singapore
+    loc: Singapore
+    hidden: 1
+    positions:
+      - title: Intern
+        workload:
+          - Research: 90%
+          - Paper: 10%
+        period: Aug 2014 - Apr 2015
+        desc: 
+        achivements:
+          - name: Prototype of the MAS of evacuation strategy with BIM-IFC Model
+            bullets:
+              - Developed an IFC parser to convert the BIM model into a 3D scene
+              - Got the best FYP project prize
+
+  - name: IT Department, Keppel Land
+    loc: Singapore
+    hidden: 1
+    positions:
+      - title: Intern
+        workload:
+          - Programming: 90%
+          - Report: 10%
+        period: Feb 2013 - Jul 2013
+        desc: 
+        achivements:
+          - name: GO-Mobile Internal Applications
+            bullets:
+              - Launched 3 applications on IOS and Android platforms
+
+education:
+  - name: Institute of System Science, National University of Singapore
+    loc: Singapore
+    logo: nus.png
+    positions:
+      - title: Master of Technology in Knowledge of Engineering
+        period: Jan 2014 - Aug 2015
+        achivements:
+          - GPA 4.19/5.0, Top <b>10%</b>
+          - The <b>Best</b> FYP project prize
+
+      - title: Graduate Diploma of System Analysis
+        period: Aug 2012 - Aug 2013
+        achivements:
+          - GPA 4.41/5.0, Top <b>3</b>
+
+  - name: Computer Science and Technology, Harbin Institute of Technology
+    loc: China
+    logo: hit.png
+    positions:
+      - title: Bachelor of Computer Science and Technology
+        period: Sep 2008 - Jul 2012
+        achivements:
+          - GPA 82.4/100.0, Top <b>10%</b>
+
+skills:
+  - category: Language
+    perks:
+      - Mandarin
+      - English
+      
+  - category: Programming
+    perks:
+      - Python
+      - Java
+      - C/C++
+
+  - category: ML
+    perks:
+      - Tensorflow
+      - Pytorch
+      - Scikit-learn
+      - AllenNLP
+
+  - category: Database
+    perks:
+      - MySQL
+      - MangoDB
+
+  - category: Web Dev
+    perks:
+      - Jinja2
+      - Flask
+      - HTML/CSS
+      - JavaScript
+
+  - category: Visualization
+    perks:
+      - PivotChart
+      - D3.js
+      - Tableau
+
+awards:
+  - Deep Learning Specialization by DeepLearning.AI, Coursera. No.BDQ6PV84R4VU, May 2019
+  - Google Cloud Big Data and Machine Learning Fundamentals, Coursera. No.3C5P9W8A53NW, Jan 2022
+  - Introduction to TensorFlow, Coursera. No.T6K3GLP5XUCQ, Mar 2022
+
+interests:
+  - category: Game
+    perks:
+      - WoW
+      - Overwatch
+      - Pokémon Game
+      - Skyrim 5
+      - Sims/Sims City
+      - Pal 1-7
+      - Minecraft
+
+  - category: Sport
+    perks:
+      - Swimming
+      - Skating
+
+  - category: hobby
+    perks:
+      - Singing
+      - Shopping
+      - Cooking

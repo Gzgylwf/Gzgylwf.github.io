@@ -1,0 +1,19 @@
+position: Senior Data Scientist
+company: Riot, Singapore
+name: Li Wenfeng
+email: gemini_china@hotmail.com
+hp: +65 8342 2901
+
+# Above is the basic information
+
+Dear Riot Recruiting Team,
+
+I am writing to express my interest in the attractive position of Senior Data Scientist you posted on Linkedin. Through the job description, I think my experience will qualify the expectation.
+
+Currently, I am working as Senior Research Engineering in the NLP group at I2R, AStar. I am responsible for establishing the data pipeline and managing our data. I created and deployed the platform for our unit to analyse and visualize our data and model. And I am also involved in deep learning model development, especially in the sentence-level and aspect-level sentiment domain. Besides the research work, I also assist the project manager to optimize the budget and manpower of the project. Provide essential reports and a dashboard to support their decision making. I feel my analytical and model skill make me be a good candidate for your position.
+
+After work, I am also a game lover since high school. It is meaningful for me if I can work in the game industry. And also I hope my work can affect people around the world. Game is a good way can cross languages and countries.
+
+I would like to have a chance to meet with you and discuss the opportunities. Please let me know if you have any questions.
+
+Thanks for your consideration.
