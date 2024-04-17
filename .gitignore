@@ -1,2 +1,3 @@
 env
 brokers/__pycache__
+.DS_*
