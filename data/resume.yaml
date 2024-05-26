@@ -2,7 +2,7 @@ about:
   firstName: Xu
   lastName: Zhang
   email: zinkpolymer@gmail.com
-  hpSg: +65 8393 7260
+  hpSg: +65 8393 7260 (WhatsApp)
   loc: Singapore
   version: en
 
@@ -19,7 +19,7 @@ skills:
       - Accelerated Weathering Tester (Q-UV, Q-SUN)
       - Innovation Yellow Belt certificate (six sigma)
       - Respond to Fire Incident in Workplace certificate
-      - Transient Plant Source Method
+      - Materials characterization (FT-IR, MS, XRD, XPS, etc.)
 
   - category: Software
     perks:
@@ -33,7 +33,6 @@ Education:
     period: Jul 2019 - Apr 2021
     achivements:
       - NUS CAP 4.38/5
-      - TUM CAP 1.3/5 (1 for full CAP)
 
   - title: Bachelor of Engineering in Polymer Science and Materials
     subTitle: Northwestern Polytechnical University, NWPU, China
@@ -64,24 +63,34 @@ Work Experience:
     period: Aug 2021 - Present
     achivements:
       - Conduct daily lab work (formulation making, resin printing, testing, and housekeeping activities);
-      - Analyze lab data, independently summerize and make proposals for the further steps;
+      - Analyze lab data, independently summarize and make proposals for the further steps;
       - Able to operate DLP printers and troubleshoot or adjust printing parameters independently;
       - Work on ESTER system (EHSQ) to fulfill the safety of operating equipment in lab;
       - Assist in onboarding training of new joiners (Interns, contractors or trainees).
     projects:
-      - name: Phoenix Project
+      - name: Projects
         achivements:
-          - Participate in and conduct the formulation, printing and testing jobs for project Phoenix (INFINAM ST6100L, a photopolymer material exhibits excellent mechanical and high temperature resistance);
-          - Conduct resin iteration, postcuring study, daily sample printing, characterization and aging study.
-      - name: Phlame Project
+          - Participate in at least 3 projects and get involved in full I2P process (Idea to Profit);
+          - Work on Project Phoenix (High strength and High HDT material) after-launch study, take lead in QC and address customers' technical issues;
+          - Work on Project Phlame (Flame-retardant material) full I2P study as a lead chemist; finish formulation adjustment, printing, testing, customer sampling and production; 
+          - Work on Project Phisible-Mod (Transparent material) production and printability study.
+      - name: Customer Interactions 
         achivements:
-          - Participate in and work as a lead chemist in project Phlame (INFINAM FR 4100L, a photopolymer material exhibits flame retardant and mechanically durable after cured);
-          - Optimize printing settings, postcuring study, aging and chemical resistance study, supporting data generation for IP work;
-          - Continously work with customers to address the technical problems encountered.
-
+          - In charge of customer sampling and material quality check;
+          - Adjust additive package (photo-initiative, light stabilizer, light absorbent etc.) based on customers' request;
+          - Optimize printing settings, postcuring study, aging study and other additional tests to troubleshoot customers' technical issues.
+      - name: Production and QC 
+        achivements:
+          - Establish production process methods from 100g to 30Kg upscale in lab and finish the material evaluation;
+          - Participate and support projects production in 300-600Kg toller upscale;
+          - Successfully finished 3 X 300Kg toller upscale for the project Phlame and all passed QC.
+      - name: IP and Patent Work
+        achivements:
+          - Support in patent draft work and experiment data;
+          - Work on FTO (Freedom to Operate) study, compile data and finish data analysis.
   - title: Internship for Research & Development Work
     subTitle: Evonik (SEA) Pte Ltd., Singapore
-    period: July 2020 - Apr 2021
+    period: Jul 2020 - Apr 2021
     achivements:
       - Formulate photopolymer resin and conduct 3D printing work
       - Conduct mechanical and thermal properties testing for plastic materials
@@ -99,4 +108,4 @@ Awards:
 
 Publications:
   - Dongliang Ding, Zhihui Shang, <u>Xu Zhang</u>, Xingfeng Lei, Zhenguo Liu, Qiuyu Zhang, and Yanhui Chen. <i>Creamics International</i>, 2020 (Bachelor thesis work);
-  - Tough Flame-Retardant Radiation Curable Composition for Additive Manufacturing (Halogen-free), 2023E00236 SG, Inventor, 2023 (Projetc Phlame).
+  - Tough Flame-Retardant Radiation Curable Composition for Additive Manufacturing (Halogen-free), 2023E00236 SG, Inventor, 2023 (Project Phlame).
