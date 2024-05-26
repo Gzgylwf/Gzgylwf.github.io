@@ -1,22 +1,38 @@
-# Personal Page & Resume Editor
+# RELIC
 
-The repo is used for update the personal page and resume.
+The name is from my love game Cyberpunk 2077, it is can save the soul of people. Hope the tools can used to manage yourself data.
+The repo is a tools as personal page assitants for my own usage, some tool are very personalized. It consists of 2 parts:
 
-## 1. __Write the YAML__
+## RELIC web apps
 
-For the personal page, it will show all fields except `summary` session.
+It is built with [Streamlit.io](https://streamlit.io/). Follow the step to initial the env.
 
-For the resume page, it will only show the those field w/o `hidden` attributes.
+The project structure and explanation as below:
 
-## 2. __Run the code__
+folder/file|description
+:---|:---
+relic.py|The main entry of the apps
+index.html|The public github page. It a static page, can be updated by the tool.
+souls/All the user profile stored.
 
-```shell
-source env/bin/activate
-python update_site.py
+### Env prepare
+
+- Python 3.9
+
+### Install (activate your env)
+
+```bash
+pip install -e ./relic
 ```
 
-## 3. __Open and print the resume__
+### Run
 
-Open the resume.html page and print out to replace the .pdf resume in the root directory. Then the personal page can download normally.
+The following command will run the apps for selected user.
 
-# Remake with NLP lab
+```bash
+streamlit relic.py [soul_name]
+```
+
+## Static Github page [Optional]
+
+Please refer to [Github pages](https://pages.github.com/) to set up your own public page. This tool only use to update and manage the content of `index.html`, you need to set your own repo to make the page can be visited.

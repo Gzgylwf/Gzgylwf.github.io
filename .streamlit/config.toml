@@ -1,0 +1,7 @@
+[theme]
+base="dark"
+primaryColor="#25cb5f"
+font="monospace"
+
+[client]
+showSidebarNavigation = true
