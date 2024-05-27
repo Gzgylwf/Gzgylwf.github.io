@@ -30,7 +30,7 @@ pip install -e ./relic
 The following command will run the apps for selected user.
 
 ```bash
-streamlit relic.py [soul_name]
+streamlit resume.py
 ```
 
 ## Static Github page [Optional]
