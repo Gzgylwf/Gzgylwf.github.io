@@ -11,7 +11,9 @@ class Profile(BaseModel):
 class Resume(BaseModel):
     profile: Optional[Profile] = None
 
-    def save(self, resume_folder: str):
+    def save_to(self, root_folder: str):
+        
+        resume_folder = os.path.join(root_folder, f"{self.profile.first_name}_{self.profile.last_name}")
         if not os.path.exists(resume_folder): os.makedirs(resume_folder)
         fn = os.path.join(resume_folder, "resume.json")
         with io.open(fn, "w") as f:
