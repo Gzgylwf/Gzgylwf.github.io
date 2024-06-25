@@ -4,6 +4,8 @@ from jinja2 import Environment, FileSystemLoader
 import io
 import os
 import yaml
+import json
+import typer
 
 def readResume(fn):
     ret = yaml.safe_load(open(fn, 'rb'))
@@ -42,49 +44,42 @@ def render(data: dict, template, outputFn):
         f.write(output)
         f.close()
 
-if __name__ == "__main__":
-    resume = readResume('data/resume.yaml')
-    resumeCN = None
-    if os.path.exists('data/resume_cn.yaml'): resumeCN = readResume('data/resume_cn.yaml')
-    
+def make_resume(
+        resume: str, 
+        save: str=None, 
+        template: str="resume.html", 
+        theme: str="#1da1f2",
+        date_cols: int=3,
+    ):
+    assert os.path.exists(resume), f"{resume} does not exist"
+    assert os.path.exists(template), f"{template} does not exist"
+    # Load template
     env = Environment(loader=FileSystemLoader("templates"))
-    #templatesFiles = ['index', 'resume']
-    templatesFiles = ['resume-tw']
+    jinja_template = env.get_template(template)
+    # Load data
+    data: dict = None
+    if resume.endswith(".yaml"): data = readResume(resume)
+    elif resume.endswith(".json"): data = json.load(io.open(resume, 'r'))
+    else: raise ValueError(f"Unsupported file type: {resume}")
+    # Render
+    title = f"{data['about']['lastName']} {data['about']['firstName']}-Resume"
+    output = jinja_template.render(
+        title = title,
+        about=data.pop('about'),
+        skills=data.pop('skills'),
+        resume=data,
+        theme=theme,
+        date_cols=date_cols
+    )
+    # Save to file
+    if save is None:
+        filename = f"{title}.html"
+        save = os.path.join(os.path.dirname(resume), filename)
+    with io.open(save, "w") as f:
+        f.write(output)
+        f.close()
 
-    for templateFile in templatesFiles:
-        render(resume, "{}.html".format(templateFile), "{}.html".format(templateFile))
-        if resumeCN is not None:
-            render(resumeCN, "{}.html".format(templateFile), "{}_cn.html".format(templateFile))
-        '''
-        template = env.get_template(templateFile)
-        output = template.render(
-            title = "Personal Page - LI Wenfeng",
-            sessAbout = resume['about'],
-            sessExp = resume['experience'],
-            sessEdu = resume['education'],
-            sessSkill = resume['skills'],
-            sessAwards = resume['awards']
-        )
 
-        # Save to file
-        with io.open(templateFile, "w") as f:
-            f.write(output)
-            f.close()
-        '''
-
-    # Save pdf
-    '''
-    options = {
-        'page-size': 'A4',
-        'margin-top': '0.0in',
-        'margin-right': '0.0in',
-        'margin-bottom': '0.0in',
-        'margin-left': '0.0in',
-        'encoding': "UTF-8",
-        'no-outline': None,
-        'enable-local-file-access': ""
-    }
-    pdfkit.from_file('resume.html', output_path='{}{}-resume.pdf'.format(resume['about']['lastName'], resume['about']['firstName']), options=options)
-    '''
-    print("Update finish!")
+if __name__ == "__main__":
+    typer.run(make_resume)
     

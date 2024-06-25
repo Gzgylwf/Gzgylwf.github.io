@@ -6,28 +6,15 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>{{ title }}</title>
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <!--
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="css/resume.css" rel="stylesheet" />
-        <link href="css/all.css" rel="stylesheet" />
-        -->
         <script src="https://cdn.tailwindcss.com"></script>
-
-        <!-- Font -->
-        <!--
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
-        -->
     </head>
 
     <body>
         <div class="flex flex-col mx-3 my-3 lining-nums slashed-zero">
             <!-- Personal Info -->
-            <div id="head" class="flex flex-col border-b-2 border-sky-600 border-double">
+            <div id="head" class="flex flex-col border-b-2 border-[#{{theme}}] border-double">
                 <div class="flex font-bold text-3xl">
-                    <span class="text-sky-600 uppercase">{{about.lastName}}</span>
+                    <span class="text-[#{{theme}}] uppercase">{{about.lastName}}</span>
                     <span class="ms-2">{{about.firstName}}</span>
                 </div>
                 <div class="flex mt-0 mb-2 text-sm">
@@ -38,7 +25,7 @@
 
             <!-- Resume Body -->
             <div class="grid grid-cols-12 gap-1">
-                <div id="skills" class="flex flex-col col-span-3 border-e-2 border-sky-600 border-double me-2">
+                <div id="skills" class="flex flex-col col-span-3 border-e-2 border-[#{{theme}}] border-double me-2">
                     {% for skillGroup in skills %}
                     <div class="flex flex-col">
                         <div class="font-bold mt-2 text-lg">
@@ -89,7 +76,7 @@
                                 <!-- Complex item -->
                                 {% elif item is mapping %}
                                 <div class="mb-2">
-                                    <div class="grid grid-cols-12 px-2 bg-sky-100">
+                                    <div class="grid grid-cols-12 px-2 bg-[#{{theme}}10]">
                                         <!-- Title, subtitle and location -->
                                         <div class="col-span-8">
                                             <div class="font-semibold mb-0 pb-0">
@@ -103,7 +90,7 @@
                                         </div>
                                         <!-- Period and date -->
                                         {% if 'period' in item %}
-                                        <div class="font-semibold text-sky-600 mb-0 col-span-4 text-right">
+                                        <div class="font-semibold text-[#{{theme}}] mb-0 col-span-4 text-right">
                                             {{item.period}}
                                         </div>
                                         {% endif %}
