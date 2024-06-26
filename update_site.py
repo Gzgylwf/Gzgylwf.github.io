@@ -29,7 +29,7 @@ def render(data: dict, template, outputFn):
     #     sessSummary = object['summary'],
     #     sessInterests = object['interests']
     # )
-    ignore_fields = ['summary', 'interests']
+    ignore_fields = ['summary', 'interests', 'awards', 'publications']
     for field in ignore_fields:
         if field in data: data.pop(field)
 
@@ -48,7 +48,7 @@ def make_resume(
         resume: str, 
         save: str=None, 
         template: str="resume.html", 
-        theme: str="#1da1f2",
+        theme: str="1d913c",
         date_cols: int=3,
     ):
     assert os.path.exists(resume), f"{resume} does not exist"
@@ -61,6 +61,10 @@ def make_resume(
     if resume.endswith(".yaml"): data = readResume(resume)
     elif resume.endswith(".json"): data = json.load(io.open(resume, 'r'))
     else: raise ValueError(f"Unsupported file type: {resume}")
+    # Pop ignore fields
+    ignore_fields = ['summary', 'interests', 'awards', 'publications']
+    for field in ignore_fields:
+        if field in data: data.pop(field)
     # Render
     title = f"{data['about']['lastName']} {data['about']['firstName']}-Resume"
     output = jinja_template.render(

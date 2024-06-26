@@ -6,125 +6,102 @@ about:
   hpCn: +86 139 8540 7427
   loc: Singapore
   github: Gzgylwf
-  ins: gemini_china
   version: en
 
-summary:
-  - Solid 7 years of work experience in programming, data analysis and machine learning on NLP
-
-experience:
-  - name: NLP Group, ALI, I2R, AStar
+Work Experience:
+  - title: NLP Group, ALI, I2R, A*Star
+    subTitle: Lead Research Engineer
+    period: Apr 2019 - Present
     loc: Singapore
-    positions:
-      - title: Senior Research Engineering II
-        workload:
-          - Projects: 50%
-          - Research: 30%
-          - Admin: 20%
-        period: Apr 2019 - Present
-        desc: 
+    achivements:
+      - Industry, 50%, Research, 30%, Admin, 20%
+    projects:
+      - name: Customer Satisfaction Analysis of Helpdesk Dialogue
         achivements:
-          - name: Customer Satisfaction Analysis of Helpdesk Dialogue, Baidu Cooperated Project
-            bullets:
-              - Developed and refined the model that increase customer about <b>4.6</b> times productivity boost
-              - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement
-          - name: Propose and build the annotation platform which boost the <b>2-3</b> times speed and enhaced the annotation quality
-      - title: Senior Research Engineering I
-        workload:
-          - Projects: 70%
-          - Research: 30%
-        period: Apr 2018 - Mar 2019
-        desc: 
-        achivements:
-          - name: Machine Reading Comprehension on Yes/No Question, Baidu Cooperated Project
-            bullets:
-              - Developed and refined the model which achieved the top <b>3</b> performance on the Yes/No dataset
-          - name: Propose and build an annotation tool for complex text data, which boost <b>1-2</b> times annotation speed
-      - title: Research Engineering
-        workload:
-          - Project: 90%
-          - Research: 10%
-        period: Aug 2015 - Mar 2018
-        desc: 
-        achivements:
-          - name: Target-level Sentiment Analysis of News Title, Baidu Cooperated Project
-            bullets:
-              - Developed and refined the model which was <b>integrated</b> into Baidu NLP API
-              - Created and built about <b>10K</b> chineses news dataset for target-level sentiment analysis
-          - name: Sentiment Analysis of Movie Comments, Baidu Cooperated Project
-            bullets:
-              - Finetuned the model with around <b>7-8%</b> F1-score improvement
-              - Deployed the model on Baidu's platform which satisfied <b>8</b> domains over <b>3</b> products
-              - Create and built about <b>90K</b> comments dataset for sentiment analysis
+          - Developed and refined the model that increase customer about <b>4.6</b> times productivity boost
+          - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement
+      - name: Propose and build the annotation platform which boost the <b>2-3</b> times speed and enhaced the annotation quality
   
-  - name: BA Department, Zalora
+  - title: NLP Group, ALI, I2R, A*Star
+    subtitle: Senior Research Engineering I
+    period: Apr 2018 - Mar 2019
     loc: Singapore
+    achivements:
+      - Projects, 70%, Research: 30%
+    projects:
+      - name: Machine Reading Comprehension on Yes/No Question, Baidu Cooperated Project
+        achivements:
+          - Developed and refined the model which achieved the top <b>3</b> performance on the Yes/No dataset
+      - name: Propose and build an annotation tool for complex text data, which boost <b>1-2</b> times annotation speed
+
+  - title: NLP Group, ALI, I2R, A*Star  
+    subTitle: Research Engineering
+    period: Aug 2015 - Mar 2018
+    loc: Singapore
+    achivements:
+      - Project: 90%, Research, 10%
+    projects:
+      - name: Target-level Sentiment Analysis of News Title, Baidu Cooperated Project
+        achivements:
+          - Developed and refined the model which was <b>integrated</b> into Baidu NLP API
+          - Created and built about <b>10K</b> chineses news dataset for target-level sentiment analysis
+      - name: Sentiment Analysis of Movie Comments, Baidu Cooperated Project
+        achivements:
+          - Finetuned the model with around <b>7-8%</b> F1-score improvement
+          - Deployed the model on Baidu's platform which satisfied <b>8</b> domains over <b>3</b> products
+          - Create and built about <b>90K</b> comments dataset for sentiment analysis
+  
+  - title: BA Department, Zalora
+    subTitle: Data Analyst (Internship)
+    loc: Singapore
+    period: Apr 2015 - Jun 2015
     hidden: 1
-    positions:
-      - title: Data Analyst (Internship)
-        workload:
-          - Analysis: 80%
-          - Report: 20%
-        period: Apr 2015 - Jun 2015
-        desc: 
-        achivements:
-          - name: Create daily/monthly report for global markets
+    achivements:
+      - name: Create daily/monthly report for global markets
 
-  - name: SDE, National University of Singapore
+  - title: SDE, National University of Singapore
+    subTitle: Research Assistant (Internship)
     loc: Singapore
+    period: Aug 2014 - Apr 2015
     hidden: 1
-    positions:
-      - title: Intern
-        workload:
-          - Research: 90%
-          - Paper: 10%
-        period: Aug 2014 - Apr 2015
-        desc: 
+    projects:
+      - name: Prototype of the MAS of evacuation strategy with BIM-IFC Model
         achivements:
-          - name: Prototype of the MAS of evacuation strategy with BIM-IFC Model
-            bullets:
-              - Developed an IFC parser to convert the BIM model into a 3D scene
-              - Got the best FYP project prize
+          - Developed an IFC parser to convert the BIM model into a 3D scene
+          - Got the best FYP project prize
 
-  - name: IT Department, Keppel Land
+  - title: IT Department, Keppel Land
+    subTitle: Software Engineer (Internship)
     loc: Singapore
+    period: Feb 2013 - Jul 2013
     hidden: 1
-    positions:
-      - title: Intern
-        workload:
-          - Programming: 90%
-          - Report: 10%
-        period: Feb 2013 - Jul 2013
-        desc: 
+    projects:
+      - name: GO-Mobile Internal Applications
         achivements:
-          - name: GO-Mobile Internal Applications
-            bullets:
-              - Launched 3 applications on IOS and Android platforms
+          - Launched 3 applications on IOS and Android platforms
 
-education:
-  - name: Institute of System Science, National University of Singapore
+Education:
+  - title: Institute of System Science, National University of Singapore
+    subTitle: Master of Technology in Knowledge of Engineering
     loc: Singapore
-    logo: nus.png
-    positions:
-      - title: Master of Technology in Knowledge of Engineering
-        period: Jan 2014 - Aug 2015
-        achivements:
-          - GPA 4.19/5.0, Top <b>10%</b>
-          - The <b>Best</b> FYP project prize
+    period: Jan 2014 - Aug 2015
+    achivements:
+      - GPA 4.19/5.0, Top <b>10%</b>
+      - The <b>Best</b> FYP project prize
 
-      - title: Graduate Diploma of System Analysis
-        period: Aug 2012 - Aug 2013
-        achivements:
-          - GPA 4.41/5.0, Top <b>3</b>
+  - title: Institute of System Science, National University of Singapore
+    subTitle: Graduate Diploma of System Analysis
+    loc: Singapore
+    period: Jan 2010 - Aug 2013
+    achivements:
+      - GPA 4.41/5.0, Top <b>3</b>
 
-  - name: Computer Science and Technology, Harbin Institute of Technology
+  - title: Computer Science and Technology, Harbin Institute of Technology
+    subTitle: Bachelor of Computer Science and Technology
     loc: China
-    logo: hit.png
-    positions:
-      - title: Bachelor of Computer Science and Technology
-        period: Sep 2008 - Jul 2012
-        achivements:
-          - GPA 82.4/100.0, Top <b>10%</b>
+    period: Sep 2008 - Jul 2012
+    achivements:
+      - GPA 82.4/100.0, Top <b>10%</b>
 
 skills:
   - category: Language
@@ -163,7 +140,7 @@ skills:
       - D3.js
       - Tableau
 
-awards:
+Certifications:
   - Deep Learning Specialization by DeepLearning.AI, Coursera. No.BDQ6PV84R4VU, May 2019
   - Google Cloud Big Data and Machine Learning Fundamentals, Coursera. No.3C5P9W8A53NW, Jan 2022
   - Introduction to TensorFlow, Coursera. No.T6K3GLP5XUCQ, Mar 2022
