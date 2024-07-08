@@ -51,10 +51,11 @@ def make_resume(
         theme: str="1d913c",
         date_cols: int=3,
     ):
+    template_folder = os.path.join(os.getcwd(), "templates")
     assert os.path.exists(resume), f"{resume} does not exist"
-    assert os.path.exists(template), f"{template} does not exist"
+    assert os.path.exists(template_folder), f"{template_folder} does not exist"
     # Load template
-    env = Environment(loader=FileSystemLoader("templates"))
+    env = Environment(loader=FileSystemLoader(template_folder))
     jinja_template = env.get_template(template)
     # Load data
     data: dict = None

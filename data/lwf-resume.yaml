@@ -8,142 +8,152 @@ about:
   github: Gzgylwf
   version: en
 
-Work Experience:
-  - title: NLP Group, ALI, I2R, A*Star
-    subTitle: Lead Research Engineer
-    period: Apr 2019 - Present
-    loc: Singapore
-    achivements:
-      - Industry, 50%, Research, 30%, Admin, 20%
-    projects:
-      - name: Customer Satisfaction Analysis of Helpdesk Dialogue
-        achivements:
-          - Developed and refined the model that increase customer about <b>4.6</b> times productivity boost
-          - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement
-      - name: Propose and build the annotation platform which boost the <b>2-3</b> times speed and enhaced the annotation quality
-  
-  - title: NLP Group, ALI, I2R, A*Star
-    subtitle: Senior Research Engineering I
-    period: Apr 2018 - Mar 2019
-    loc: Singapore
-    achivements:
-      - Projects, 70%, Research: 30%
-    projects:
-      - name: Machine Reading Comprehension on Yes/No Question, Baidu Cooperated Project
-        achivements:
-          - Developed and refined the model which achieved the top <b>3</b> performance on the Yes/No dataset
-      - name: Propose and build an annotation tool for complex text data, which boost <b>1-2</b> times annotation speed
-
-  - title: NLP Group, ALI, I2R, A*Star  
-    subTitle: Research Engineering
-    period: Aug 2015 - Mar 2018
-    loc: Singapore
-    achivements:
-      - Project: 90%, Research, 10%
-    projects:
-      - name: Target-level Sentiment Analysis of News Title, Baidu Cooperated Project
-        achivements:
-          - Developed and refined the model which was <b>integrated</b> into Baidu NLP API
-          - Created and built about <b>10K</b> chineses news dataset for target-level sentiment analysis
-      - name: Sentiment Analysis of Movie Comments, Baidu Cooperated Project
-        achivements:
-          - Finetuned the model with around <b>7-8%</b> F1-score improvement
-          - Deployed the model on Baidu's platform which satisfied <b>8</b> domains over <b>3</b> products
-          - Create and built about <b>90K</b> comments dataset for sentiment analysis
-  
-  - title: BA Department, Zalora
-    subTitle: Data Analyst (Internship)
-    loc: Singapore
-    period: Apr 2015 - Jun 2015
-    hidden: 1
-    achivements:
-      - name: Create daily/monthly report for global markets
-
-  - title: SDE, National University of Singapore
-    subTitle: Research Assistant (Internship)
-    loc: Singapore
-    period: Aug 2014 - Apr 2015
-    hidden: 1
-    projects:
-      - name: Prototype of the MAS of evacuation strategy with BIM-IFC Model
-        achivements:
-          - Developed an IFC parser to convert the BIM model into a 3D scene
-          - Got the best FYP project prize
-
-  - title: IT Department, Keppel Land
-    subTitle: Software Engineer (Internship)
-    loc: Singapore
-    period: Feb 2013 - Jul 2013
-    hidden: 1
-    projects:
-      - name: GO-Mobile Internal Applications
-        achivements:
-          - Launched 3 applications on IOS and Android platforms
-
 Education:
   - title: Institute of System Science, National University of Singapore
-    subTitle: Master of Technology in Knowledge of Engineering
     loc: Singapore
-    period: Jan 2014 - Aug 2015
-    achivements:
-      - GPA 4.19/5.0, Top <b>10%</b>
-      - The <b>Best</b> FYP project prize
-
-  - title: Institute of System Science, National University of Singapore
-    subTitle: Graduate Diploma of System Analysis
-    loc: Singapore
-    period: Jan 2010 - Aug 2013
-    achivements:
-      - GPA 4.41/5.0, Top <b>3</b>
+    segmentations:
+      - subTitle: Master of Technology in Knowledge of Engineering
+        datetime: Jan 2014 - Jun 2015
+        achivements:
+          - GPA 4.19 / 5.0, Top <b>10%</b>
+          - The <b>Best</b> FYP project prize
+      - subTitle: Graduate Diploma of System Analysis
+        datetime: Jul 2012 - Aug 2013
+        achivements:
+          - GPA 4.41 / 5.0, Top <b>3</b>
 
   - title: Computer Science and Technology, Harbin Institute of Technology
-    subTitle: Bachelor of Computer Science and Technology
     loc: China
-    period: Sep 2008 - Jul 2012
-    achivements:
-      - GPA 82.4/100.0, Top <b>10%</b>
+    segmentations:
+      - subTitle: Bachelor of Computer Science and Technology
+        datetime: Sep 2008 - Jul 2012
+        achivements:
+          - GPA 82.4 / 100.0, Top <b>10%</b>
 
-skills:
+Work Experience:
+  - title: NLP Group, ALI, I2R, A*Star
+    loc: Singapore
+    segmentations:
+      - subTitle: Lead Research Engineer II
+        datetime: Jul 2023 - Present
+        achivements:
+          - 60% Project / 20% Research / 20% Admin
+          - Responsible for establishing our local framework and platform for data pipeline, model finetune and evaluation
+          - Coordinated with the project development team and resources planning and budget management
+      - subTitle: Senior Research Engineering II
+        datetime: Apr 2019 - Jun 2023
+        achivements:
+          - 60% Project / 20% Research / 20% Admin
+          - Responsible for the data annotation and manage the local data central
+          - Performed the model training and optimization to achieve the customer required performance
+          - Assist with project budget and allocation management to ensure the project success
+      - subTitle: Senior Research Engineering I
+        datetime: Apr 2018 - Mar 2019
+        achivements:
+          - 70% Project / 30% Research
+          - Responsible for the preparation of data annotation and build the data pipeline
+          - Developed tools for boosting the data annotation and data quality improvement
+          - Conducted the experiments for project model performance improvement and interagtion
+      - subTitle: Research Engineering
+        datetime: Aug 2015 - Mar 2018
+        achivements:
+          - 90% Project / 10% Research
+          - Assist the scientist to prepare, clear, and annotate the high-quality dataset for model training
+          - Conducted the error analysis of the varioud model and search for the optimal results
+  
+  - title: BA Department, Zalora
+    loc: Singapore
+    hidden: true
+    segmentations:
+      - subTitle: Data Analyst (Internship)
+        datetime: Apr 2015 - Jun 2015
+
+  - title: SDE, National University of Singapore
+    loc: Singapore
+    segmentations:
+      - subTitle: Research Assiastant (Internship)
+        datetime: Aug 2014 - Apr 2015
+        achivements:
+          - Developed an IFC parser to convert the BIM model into a 3D scene with a multi-agent simulator, which increase the model import speed
+          - The project achieved the best FYP prize
+
+  - title: IT Department, Keppel Land
+    loc: Singapore
+    segmentations:
+      - subTitle: Software Engineer (Internship)
+        datetime: Feb 2013 - Jul 2013
+        achivements:
+          - Developed and launched 3 internal Android mobile applications enhaced the team connection
+
+Project Experience:
+  - title: LLM Interagrated Pipeline Framework
+    datetime: Jul 2023 - Present
+    segmentations:
+      - achivements:
+          - Designed and built the LLM pipeline framework that support the data annotation and model evaluation
+          
+  - title: Customer Satisfaction Analysis of Helpdesk Dialogue
+    datetime: Apr 2019 - Present
+    segmentations:
+      - achivements:
+          - Developed and refined the model that increase customer about <b>4.6</b> times productivity boost
+          - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement
+          - Propose and build the annotation platform which boost the <b>2-3</b> times speed and enhaced the annotation quality
+
+  - title: Machine Reading Comprehension on Yes/No Question
+    datetime: Apr 2018 - Mar 2019
+    segmentations:
+      - achivements:
+          - Developed and refined the model which achieved the top <b>3</b> performance on the Yes/No dataset
+          - Propose and build an annotation tool for complex text data, which boost <b>1-2</b> times annotation speed
+
+  - title: Aspect Sentiment Analysis of New Title
+    datetime: Aug 2015 - Mar 2018
+    segmentations:
+      - achivements:
+        - Developed and refined the model which achieved the top <b>3</b> performance on the IMDB dataset
+
+  - title: Sentiment Analysis of Movie Comments
+    datetime: Aug 2015 - Mar 2018
+    segmentations:
+      - achivements:
+        - Finetuned the model with around <b>7-8%</b> F1-score improvement
+        - Deployed the model on Baidu's platform which satisfied <b>8</b> domains over <b>3</b> products
+        - Create and built about <b>90K</b> comments dataset for sentiment analysis
+
+skills:      
+  - category: Programming & ML Related
+    perks:
+      - Python
+      - Java
+      - Pytorch
+      - Scikit-learn
+      - deepspeed
+      - C/C++
+
+  - category: Web Development
+    perks:
+      - FastAPI
+      - Vue
+  
+  - category: Database
+    perks:
+      - FAISS
+      - MySQL
+      - MangoDB
+
   - category: Language
     perks:
       - Mandarin
       - English
-      
-  - category: Programming
-    perks:
-      - Python
-      - Java
-      - C/C++
-
-  - category: ML
-    perks:
-      - Tensorflow
-      - Pytorch
-      - Scikit-learn
-      - AllenNLP
-
-  - category: Database
-    perks:
-      - MySQL
-      - MangoDB
-
-  - category: Web Dev
-    perks:
-      - Jinja2
-      - Flask
-      - HTML/CSS
-      - JavaScript
-
-  - category: Visualization
-    perks:
-      - PivotChart
-      - D3.js
-      - Tableau
 
 Certifications:
-  - Deep Learning Specialization by DeepLearning.AI, Coursera. No.BDQ6PV84R4VU, May 2019
-  - Google Cloud Big Data and Machine Learning Fundamentals, Coursera. No.3C5P9W8A53NW, Jan 2022
-  - Introduction to TensorFlow, Coursera. No.T6K3GLP5XUCQ, Mar 2022
+  - title: Deep Learning Specialization by DeepLearning.AI Coursera. No.BDQ6PV84R4VU
+    datetime: May 2019
+  - title: Google Cloud Big Data and Machine Learning Fundamentals Coursera. No.3C5P9W8A53NW
+    datetime: Jan 2022
+  - title: Introduction to TensorFlow Coursera. No.T6K3GLP5XUCQ
+    datetime: Mar 2022
 
 interests:
   - category: Game
