@@ -1,44 +1,43 @@
-# Read data and generate the personal static pages, CV and namecard
-from brokers import *
 from jinja2 import Environment, FileSystemLoader
 import io
 import os
 import yaml
-import argparse
-import pathlib
+import io
+import typer
 
+class CoverLetter:
+    def __init__(self, **kwargs):
+        self.__dict__.update(**kwargs)
 
-def renderCL(info, body, template):
-    template = env.get_template(template)
-    output = template.render(
-        title = "Cover Letter - {} to {}".format(info['name'], info['company']),
-        info = info,
-        body=body
-    )
+def make_cover_letter(
+    resume_fn: str, 
+    job_fn: str
+    ) -> CoverLetter:
+    assert os.path.exists(resume_fn), f"{resume_fn} does not exist"
+    assert os.path.exists(job_fn), f"{job_fn} does not exist"
+    resume = yaml.safe_load(io.open(resume_fn, 'rb'))
+    jd = yaml.safe_load(io.open(job_fn, 'rb'))
+
+    return None
+
+def render_cover_letter(
+        cover_letter_fn: str, 
+        template_fn: str="cover_letter.html",
+        save_fn: str=None,
+    ):
+    assert os.path.exists(cover_letter_fn), f"{cover_letter_fn} does not exist"
+    conver_letter = yaml.safe_load(io.open(cover_letter_fn, 'rb'))
+    template_folder = os.path.join(os.getcwd(), "templates")
+    env = Environment(loader=FileSystemLoader(template_folder))
+    template = env.get_template(template_fn)
+    output = template.render(conver_letter)
     # Save to file
-    with io.open('{}_Coverletter.html'.format(info['company']), "w") as f:
-        f.write(output)
-        f.close()
+    if save_fn is not None:
+        with io.open(save_fn, "w") as f:
+            f.write(output)
+            f.close()
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('coverletter', type=str, help='Cover letter file')
-    args = parser.parse_args()
-
-    assert os.path.exists(args.coverletter), "{} not existed!".format(args.resume)
-    # Read files
-    info, body = {}, []
-    for line in io.open(args.coverletter, 'r', encoding='utf8').readlines():
-        line = line.strip()
-        if line.startswith("#") or line == '': continue
-        elif ':' in line:
-            chunks = line.split(":")
-            info[chunks[0].strip()] = chunks[1].strip()
-        else:
-            body.append(line)
-    
-    env = Environment(loader=FileSystemLoader("templates"))
-    renderCL(info, body, "coverletter.html")
-    print("Update finish!")
+    typer(make_cover_letter)
     

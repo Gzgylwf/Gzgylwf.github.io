@@ -87,13 +87,21 @@ Work Experience:
 
 Project Experience:
   - title: LLM Interagrated Pipeline Framework
-    datetime: Jul 2023 - Present
+    datetime: 2024 - Present
     segmentations:
       - achivements:
           - Designed and built the LLM pipeline framework that support the data annotation and model evaluation
+
+  - title: Document-level Unified Event Extraction 
+    datetime: 2023 - Present
+    segmentations:
+      - achivements:
+          - Developed and refined the model that increase customer about <b>4.6</b> times productivity boost
+          - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement
+          - Propose and build the annotation platform which boost the <b>2-3</b> times speed and enhaced the annotation quality
           
-  - title: Customer Satisfaction Analysis of Helpdesk Dialogue
-    datetime: Apr 2019 - Present
+  - title: Customer Satisfaction Analysis of Helpdesk Conversation (Three Phases)
+    datetime: 2019 - 2022
     segmentations:
       - achivements:
           - Developed and refined the model that increase customer about <b>4.6</b> times productivity boost
@@ -101,20 +109,20 @@ Project Experience:
           - Propose and build the annotation platform which boost the <b>2-3</b> times speed and enhaced the annotation quality
 
   - title: Machine Reading Comprehension on Yes/No Question
-    datetime: Apr 2018 - Mar 2019
+    datetime: 2018 - 2019
     segmentations:
       - achivements:
           - Developed and refined the model which achieved the top <b>3</b> performance on the Yes/No dataset
           - Propose and build an annotation tool for complex text data, which boost <b>1-2</b> times annotation speed
 
   - title: Aspect Sentiment Analysis of New Title
-    datetime: Aug 2015 - Mar 2018
+    datetime: 2017 - 2018
     segmentations:
       - achivements:
         - Developed and refined the model which achieved the top <b>3</b> performance on the IMDB dataset
 
-  - title: Sentiment Analysis of Movie Comments
-    datetime: Aug 2015 - Mar 2018
+  - title: Sentiment Analysis of Movie Comments (Three Phases)
+    datetime: 2015 - 2017
     segmentations:
       - achivements:
         - Finetuned the model with around <b>7-8%</b> F1-score improvement
