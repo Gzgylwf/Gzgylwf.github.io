@@ -38,28 +38,28 @@ Work Experience:
         datetime: Jul 2023 - Present
         achivements:
           - 60% Project / 20% Research / 20% Admin
-          - Responsible for establishing our local framework and platform for data pipeline, model finetune and evaluation
-          - Coordinated with the project development team and resources planning and budget management
+          - Responsible for establishing our LLM framework and platform to integrated our data pipeline, models and resources cross projects
+          - Coordinated with the project management team and assist the resources planning and budget management ensure the project successfully completed
       - subTitle: Senior Research Engineering II
         datetime: Apr 2019 - Jun 2023
         achivements:
           - 60% Project / 20% Research / 20% Admin
-          - Responsible for the data annotation and manage the local data central
-          - Performed the model training and optimization to achieve the customer required performance
-          - Assist with project budget and allocation management to ensure the project success
+          - Responsible for establishing data pipeline and data quality control for integrated the resource cross projects
+          - Conducted the experiments of model training, finetune and integration to achieve the customer requirement
+          - Assisted with project budget and allocation management to ensure the project completed within the time and budget
       - subTitle: Senior Research Engineering I
         datetime: Apr 2018 - Mar 2019
         achivements:
           - 70% Project / 30% Research
-          - Responsible for the preparation of data annotation and build the data pipeline
-          - Developed tools for boosting the data annotation and data quality improvement
-          - Conducted the experiments for project model performance improvement and interagtion
+          - Responsible for standardizing the data annotation SOP and overseeing the data annotation process
+          - Developed tools for boosting the data annotation and data quality improvement for the projects
+          - Conducted the experiments of model training, finetune and integration to achieve the customer requirement
       - subTitle: Research Engineering
         datetime: Aug 2015 - Mar 2018
         achivements:
           - 90% Project / 10% Research
-          - Assist the scientist to prepare, clear, and annotate the high-quality dataset for model training
-          - Conducted the error analysis of the varioud model and search for the optimal results
+          - Assisted the scientists to collect, prepare, clear and provide high-quality annotated data for the projects
+          - Conducted the error analysis of our model and optimized the performance to achieve the customer requirement
   
   - title: BA Department, Zalora
     loc: Singapore
@@ -71,11 +71,10 @@ Work Experience:
   - title: SDE, National University of Singapore
     loc: Singapore
     segmentations:
-      - subTitle: Research Assiastant (Internship)
+      - subTitle: Research Assistant (Internship)
         datetime: Aug 2014 - Apr 2015
         achivements:
-          - Developed an IFC parser to convert the BIM model into a 3D scene with a multi-agent simulator, which increase the model import speed
-          - The project achieved the best FYP prize
+          - Developed an IFC parser to convert the BIM model into a 3D scene with a multi-agent simulator, achieved <b>best</b> FYP prize
 
   - title: IT Department, Keppel Land
     loc: Singapore
@@ -83,51 +82,72 @@ Work Experience:
       - subTitle: Software Engineer (Internship)
         datetime: Feb 2013 - Jul 2013
         achivements:
-          - Developed and launched 3 internal Android mobile applications enhaced the team connection
+          - Developed and launched 3 internal Android mobile applications enhanced the team connection
 
 Project Experience:
-  - title: LLM Interagrated Pipeline Framework
-    datetime: 2024 - Present
-    segmentations:
-      - achivements:
-          - Designed and built the LLM pipeline framework that support the data annotation and model evaluation
-
-  - title: Document-level Unified Event Extraction 
+  - title: LLM Integrated Pipeline Framework (Core Member & Proposer)
     datetime: 2023 - Present
     segmentations:
       - achivements:
-          - Developed and refined the model that increase customer about <b>4.6</b> times productivity boost
-          - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement
-          - Propose and build the annotation platform which boost the <b>2-3</b> times speed and enhaced the annotation quality
-          
-  - title: Customer Satisfaction Analysis of Helpdesk Conversation (Three Phases)
-    datetime: 2019 - 2022
+        - Designed and implemented the LLM framework APIs <b>centralizing</b> our data pipeline, prompt design and model finetune and evaluation, which improve our knowledge sharing.
+        - Developed a web interface allow end-users easily to access and manage resources with UI and easy to deployed on local GPU as a <b>on-premise</b> LLM platform
+
+  - title: Document-level Event Extraction on Multi Domain with LLM (Core Member & Co-PI)
+    datetime: 2023 - Present
     segmentations:
       - achivements:
-          - Developed and refined the model that increase customer about <b>4.6</b> times productivity boost
-          - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement
-          - Propose and build the annotation platform which boost the <b>2-3</b> times speed and enhaced the annotation quality
+        - Developed and refined the model that increase customer about <b>4.6</b> times productivity boost
+        - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement
+        - Propose and build the annotation platform which boost the <b>2-3</b> times speed and enhanced the annotation quality
+  
+  - title: Multi-turn Dialogue Emotion Analysis (Team Member)
+    datetime: 2022 - 2023
+    segmentations:
+      - achivements:
+        - Enhanced the annotation tool for dialogue emotion on utterance-level annotation, reduce about <b>3</b> annotation time
+        - Supported the team to refine the guideline and verify the data quality, achieved <b>86%</b> internal data agreement on <b>5K</b> data
+          
+  - title: Customer Satisfaction Analysis of China UNION Hotline Manuscript (Core Member & Co-PI)
+    datetime: 2021 - 2023
+    segmentations:
+      - achivements:
+        - Coordinated with partners to obtain the <b>clean</b> business data from the target customer for model training
+        - Enhanced the annotation tool functionality with some <b>automated</b> validation and <b>reduce time</b> for data quality control
+        - Responsible for overseeing the data annotation and clear process, data achieved <b>90%</b> internal data agreement on <b>5K</b> data
+        - Trained and optimized the model which achieved the <b>86%</b> F1-score on satisfied and <b>84%</b> F1-score on unsatisfied conversation
+        - Delivered and integrated into the customer's platform, boost <b>4.6</b> times productivity and able to pre-screen <b>300K</b> conversation per day
 
-  - title: Machine Reading Comprehension on Yes/No Question
+  - title: Customer Satisfaction Analysis of Helpdesk Conversation on Weibo (Core Member & Co-PI)
+    datetime: 2019 - 2020
+    segmentations:
+      - achivements:
+        - Created the annotation tool for dialogue data boosting the annotation speed <b>3</b> times
+        - Responsible for the data collection, clear and manage the data annotation process. The data achieved <b>91%</b> internal data agreement on <b>10K</b> data
+        - Trained and optimized the model which achieved the <b>86%</b> F1-score on 4 category conversations, passed the customer 1st phase review
+
+  - title: Machine Reading Comprehension on Yes/No Question Answering (Team Member)
     datetime: 2018 - 2019
     segmentations:
       - achivements:
-          - Developed and refined the model which achieved the top <b>3</b> performance on the Yes/No dataset
-          - Propose and build an annotation tool for complex text data, which boost <b>1-2</b> times annotation speed
+        - Developed and refined the model which achieved the top <b>3</b> performance on the Yes/No leaderboard
+        - Propose and build an annotation tool for complex text data, which boost about <b>2</b> times annotation speed
 
-  - title: Aspect Sentiment Analysis of New Title
+  - title: Aspect Sentiment Analysis of New Title (Core Member)
     datetime: 2017 - 2018
     segmentations:
       - achivements:
-        - Developed and refined the model which achieved the top <b>3</b> performance on the IMDB dataset
+        - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement on <b>30K</b> titles
+        - Created the annotation tool for aspect sentiment annotation, which boost about <b>3</b> times annotation speed
+        - Refined the model which achieved <b>2-3%</b> F1-score improvement
+        - Delivered the model to the customer as an enhanced module on <b>1</b> products
 
-  - title: Sentiment Analysis of Movie Comments (Three Phases)
+  - title: Sentiment Analysis of Movie Comments (Core Member)
     datetime: 2015 - 2017
     segmentations:
       - achivements:
-        - Finetuned the model with around <b>7-8%</b> F1-score improvement
-        - Deployed the model on Baidu's platform which satisfied <b>8</b> domains over <b>3</b> products
-        - Create and built about <b>90K</b> comments dataset for sentiment analysis
+        - Prepared the guideline and conduct the data annotation, achieved <b>90%+</b> average data internal agreement on <b>90K</b> movie comments
+        - Refined the sentiment dictionary and developed a conjunction rules module on the baseline model, which get around <b>7-8%</b> F1-score improvement
+        - Deployed the model on the customer's platform which satisfied <b>8</b> domains over <b>3</b> products
 
 skills:      
   - category: Programming & ML Related
