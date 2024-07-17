@@ -1,0 +1,90 @@
+I am writing cover letter for appling Apple's Senior Decision Support Data Scientist (Ref.200519042) position. I will pass you my resume and job qualifications as below:
+================ Resume:
+Skills:
+- Programming & ML Related: Python, Java, Pytorch, Scikit-learn, deepspeed, C/C++
+- Web Development: FastAPI, Vue
+- Database: MangoDB, FAISS, MySQL
+- Language: Mandarin, English
+
+Work Experiences:
+- NLP Group, ALI, I2R, A*Star, Singapore
+  - Lead Research Engineer II (Jul 2023 - Present)
+    - 60% Project / 20% Research / 20% Admin
+    - Responsible for establishing our LLM framework and platform to integrated our data pipeline, models and resources cross projects
+    - Coordinated with the project management team and assist the resources planning and budget management ensure the project successfully completed
+  - Senior Research Engineering II (Apr 2019 - Jun 2023)
+    - 60% Project / 20% Research / 20% Admin
+    - Responsible for establishing data pipeline and data quality control for integrated the resource cross projects
+    - Conducted the experiments of model training, finetune and integration to achieve the customer requirement
+    - Assisted with project budget and allocation management to ensure the project completed within the time and budget
+  - Senior Research Engineering I (Apr 2018 - Mar 2019)
+    - 70% Project / 30% Research
+    - Responsible for standardizing the data annotation SOP and overseeing the data annotation process
+    - Developed tools for boosting the data annotation and data quality improvement for the projects
+    - Conducted the experiments of model training, finetune and integration to achieve the customer requirement
+  - Research Engineering (Aug 2015 - Mar 2018)
+    - 90% Project / 10% Research
+    - Assisted the scientists to collect, prepare, clear and provide high-quality annotated data for the projects
+    - Conducted the error analysis of our model and optimized the performance to achieve the customer requirement
+- BA Department, Zalora, Singapore
+  - Data Analyst (Internship) (Apr 2015 - Jun 2015)
+- SDE, National University of Singapore, Singapore
+  - Research Assistant (Internship) (Aug 2014 - Apr 2015)
+    - Developed an IFC parser to convert the BIM model into a 3D scene with a multi-agent simulator, achieved <b>best</b> FYP prize
+- IT Department, Keppel Land, Singapore
+  - Software Engineer (Internship) (Feb 2013 - Jul 2013)
+    - Developed and launched 3 internal Android mobile applications enhanced the team connection
+
+Project Experiences:
+- LLM Integrated Pipeline Framework (Core Member & Proposer)
+    - Designed and implemented the LLM framework APIs <b>centralizing</b> our data pipeline, prompt design and model finetune and evaluation, which improve our knowledge sharing.
+    - Developed a web interface allow end-users easily to access and manage resources with UI and easy to deployed on local GPU as a <b>on-premise</b> LLM platform
+- Document-level Event Extraction on Multi Domain with LLM (Core Member & Co-PI)
+    - Developed and refined the model that increase customer about <b>4.6</b> times productivity boost
+    - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement
+    - Propose and build the annotation platform which boost the <b>2-3</b> times speed and enhanced the annotation quality
+- Multi-turn Dialogue Emotion Analysis (Team Member)
+    - Enhanced the annotation tool for dialogue emotion on utterance-level annotation, reduce about <b>3</b> annotation time
+    - Supported the team to refine the guideline and verify the data quality, achieved <b>86%</b> internal data agreement on <b>5K</b> data
+- Customer Satisfaction Analysis of China UNION Hotline Manuscript (Core Member & Co-PI)
+    - Coordinated with partners to obtain the <b>clean</b> business data from the target customer for model training
+    - Enhanced the annotation tool functionality with some <b>automated</b> validation and <b>reduce time</b> for data quality control
+    - Responsible for overseeing the data annotation and clear process, data achieved <b>90%</b> internal data agreement on <b>5K</b> data
+    - Trained and optimized the model which achieved the <b>86%</b> F1-score on satisfied and <b>84%</b> F1-score on unsatisfied conversation
+    - Delivered and integrated into the customer's platform, boost <b>4.6</b> times productivity and able to pre-screen <b>300K</b> conversation per day
+- Customer Satisfaction Analysis of Helpdesk Conversation on Weibo (Core Member & Co-PI)
+    - Created the annotation tool for dialogue data boosting the annotation speed <b>3</b> times
+    - Responsible for the data collection, clear and manage the data annotation process. The data achieved <b>91%</b> internal data agreement on <b>10K</b> data
+    - Trained and optimized the model which achieved the <b>86%</b> F1-score on 4 category conversations, passed the customer 1st phase review
+- Machine Reading Comprehension on Yes/No Question Answering (Team Member)
+    - Developed and refined the model which achieved the top <b>3</b> performance on the Yes/No leaderboard
+    - Propose and build an annotation tool for complex text data, which boost about <b>2</b> times annotation speed
+- Aspect Sentiment Analysis of New Title (Core Member)
+    - Managed the data annotation that provide high-quality data with <b>90%</b> data agreement on <b>30K</b> titles
+    - Created the annotation tool for aspect sentiment annotation, which boost about <b>3</b> times annotation speed
+    - Refined the model which achieved <b>2-3%</b> F1-score improvement
+    - Delivered the model to the customer as an enhanced module on <b>1</b> products
+- Sentiment Analysis of Movie Comments (Core Member)
+    - Prepared the guideline and conduct the data annotation, achieved <b>90%+</b> average data internal agreement on <b>90K</b> movie comments
+    - Refined the sentiment dictionary and developed a conjunction rules module on the baseline model, which get around <b>7-8%</b> F1-score improvement
+    - Deployed the model on the customer's platform which satisfied <b>8</b> domains over <b>3</b> products
+
+================ Job Description and qualifications
+Description:
+- As a Data Scientist in our organization, you will engage in comprehensive statistical analysis and employ machine learning to generate predictive insights that drive business decision-making. Your role includes detailed analysis of complex datasets to discover trends and forecast outcomes, which will shape strategic initiatives. Working in tandem with our data engineering team, you'll aim to bolster our data infrastructure, enabling sophisticated predictive modelling. A crucial part of your job will be to not only articulate these predictive insights to senior leadership with clarity but also to operationalise these models, ensuring they are integrated effectively into business processes for real-world applications. Additionally, you are expected to continuously refine our analytical methodologies to keep pace with the evolving landscape of predictive analytics technology.
+
+Qualifications
+- 7+ years of practical experience in a data science role, with experience in implementing large AI/ML projects.
+- Skilled in the use of statistical tools and programming (including Python, SQL).
+- Proven experience with machine learning libraries and frameworks.
+- Strong understanding of data structures and algorithms, as well as database management systems.
+- Excellent problem-solving abilities and experience in hypothesis-driven statistical testing.
+- Proven track record in operationalising models and integration into business processes
+- Experience with Operations Research and optimisation techniques is a plus.
+- Strong knowledge of supply chain processes including demand planning, inventory management, and logistics preferred
+- Demonstrated skill in data visualisation and communication tools (e.g., Tableau).
+- Ability to translate complex data insights into actionable business strategies.
+- Exceptional communication and collaboration skills, with a track record of successful cross-functional collaboration.
+
+================ Task Description
+ONLY based on the provide resume content. Write a professional and well formated covert letter to highlight my advantages for this position. ONLY reply the letter content, no need title, top information and singnature. DO NOT EXCEED 4 paragraphs.

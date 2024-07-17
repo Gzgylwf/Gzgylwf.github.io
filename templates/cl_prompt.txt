@@ -1,0 +1,23 @@
+I am writing cover letter for appling {{jd.company}}'s {{jd.title}} (Ref.{{jd.job_id}}) position. I will pass you my resume and job qualifications as below:
+================ Resume:
+Skills:
+{% for skillGroup in resume.skills %}- {{skillGroup.category}}: {{', '.join(skillGroup.perks)}}
+{% endfor %}
+Work Experiences:
+{% for workexp in resume['Work Experience'] %}- {{workexp.title}}, {{workexp.loc}}
+{% for seg in workexp.segmentations %}  - {{seg.subTitle}} ({{seg.datetime}})
+{% for achivement in seg.achivements %}    - {{achivement}}
+{% endfor %}{% endfor %}{% endfor %}
+Project Experiences:
+{% for workexp in resume['Project Experience'] %}- {{workexp.title}}
+{% for achivement in workexp.segmentations[0].achivements %}    - {{achivement}}
+{% endfor %}{% endfor %}
+================ Job Description and qualifications
+Description:
+{% for desc in jd.description %}- {{desc}}
+{% endfor %}
+Qualifications
+{% for qua in jd.qualifications %}- {{qua}}
+{% endfor %}
+================ Task Description
+ONLY based on the provide resume content. Write a professional and well formated covert letter to highlight my advantages for this position. ONLY reply the letter content, no need title, top information and singnature. DO NOT EXCEED 4 paragraphs.
